@@ -1,72 +1,29 @@
-﻿@using ITI.Mvc.LinkedIn.ViewModels
-@using ITI.Mvc.LinkedIn.Models.Entities
-@model ITI.Mvc.LinkedIn.ViewModels.AppUserViewModel
+﻿@using ITI.Mvc.LinkedIn.Models.Entities
+@model ITI.Mvc.LinkedIn.ViewModels.UserEducationViewModel
 
-<!-- Education  section -->
-<!------------------------------->
-<div id="useredureplace" class="education col-lg-push-2 col-lg-8 col-xs-11">
+<!-- (1)Add Education Modal -->
+<div class="modal fade add-education-modal" id="add-education-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel">
 
-    <div class="row education-header">
-        <div class="title col-xs-3">Education</div>
-        
-        <a href="" data-toggle="modal" data-target="#add-education-modal">
-            <div class="add-education col-xs-1 col-xs-push-8">
-                <i class="fas fa-plus-circle"></i>
-            </div>
-        </a>
-    </div>
+    <div class="modal-dialog " role="document">
 
-    <div class="row education-body">
-        @foreach (UserEducation item in Model.EducationList)
-        {
-            <div class="row education-unit col-xs-12">
-
-                <div class="education-unit-logo col-xs-1">
-                    <i class="fas fa-university"></i>
-                </div>
-
-                <div class="education-unit-details col-xs-9">
-                    <div class="education-unit-name">@item.University</div>
-                    <span class="education-unit-degree">@item.Degree</span>
-                    <span class="education-unit-field">@item.Fieldofstudy</span>
-                    <span class="education-unit-grade">@item.Grade</span>
-                    <div class="education-unit-start-end-year">@item.StartingDate-@item.EndDate</div>
-                </div>
-                <a href="" data-toggle="modal" data-target="#edit-education-modal">
-                    <div class="edit-education-unit col-xs-1 ">
-                        <i class="fas fa-pen"></i>
-                    </div>
+        <div class="modal-content add-education-modal-content">
+            <div class="modal-header add-education-modal-header">
+                <span class="add-education-modal-titl">Add Education</span>
+                <a class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="x">&times;</span>
                 </a>
             </div>
-
-            
-        }
-
-       
-
-
-
-
-    </div>
-</div>
-@Html.Partial("_PartialCreateEducation", new UserEducationViewModel())
-
-<!-- (2)Edit Education Modal -->
-<div class="modal fade edit-education-modal" id="edit-education-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <form>
-        <div class="modal-dialog " role="document">
-
-            <div class="modal-content add-education-modal-content">
-                <div class="modal-header add-education-modal-header">
-                    <span class="add-education-modal-titl">Edit Education</span>
-                    <a class="close " data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" class="x">&times;</span>
-                    </a>
-                </div>
-
-
-                <form class="add-education-modal-form">
-                    <label class="edit-profile-modal-form-lable">School&nbsp;&nbsp;<span class="requied">*</span></label>
+            @using (Ajax.BeginForm("AddUserEducation", "ProfileManager", new AjaxOptions
+            {
+                HttpMethod = "Post",
+                InsertionMode = InsertionMode.InsertAfter, //target element(#patientList) will be replaced
+                UpdateTargetId = "useredureplace",
+                //LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
+            }, new { @class = "add-experience-modal-form add-skill-modal-form", id = "addeducationform" }
+               ))
+            {
+                <label class="edit-profile-modal-form-lable">School&nbsp;&nbsp;<span class="requied">*</span></label>
                     <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
                            placeholder="Ex: Boston University">
 
@@ -82,7 +39,7 @@
                     <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
                            placeholder="Current Position">
 
-                    <label class="edit-profile-modal-form-lable">Activities and societies</span></label>
+                    <label class="edit-profile-modal-form-lable">Activities and societies</label>
                     <textarea class="form-control edit-profile-modal-form-textarea" rows="3"></textarea>
 
                     <label class="edit-profile-modal-form-lable">From Year</label>
@@ -133,13 +90,14 @@
                     </div>
 
 
-                    <label class="edit-profile-modal-form-lable">Description</span></label>
+                    <label class="edit-profile-modal-form-lable">Description</label>
                     <textarea class="form-control edit-profile-modal-form-textarea" rows="3"></textarea>
 
                     <div class="edit-profile-modal-save">
-                        <button type="submit" class="btn edit-profile-modal-save-btn">Save</button>
+                        <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('addeducationform').submit()">Create</a>
+
                     </div>
-                </form>
+            }
 
 
 
@@ -147,10 +105,9 @@
 
 
 
-
-            </div>
         </div>
-    </form>
+    </div>
+
 
 
 </div>

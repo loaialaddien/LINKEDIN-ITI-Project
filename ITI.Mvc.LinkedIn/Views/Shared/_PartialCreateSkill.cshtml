@@ -19,7 +19,7 @@
     HttpMethod = "POST",
 
     InsertionMode = InsertionMode.ReplaceWith, //target element(#) will be replaced
-    UpdateTargetId = "courses-container",
+    UpdateTargetId = "Skills-container",
     //LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
 }, new { @class = "add-experience-modal-form add-skill-modal-form", id = "addskillform" }))
 {
@@ -32,7 +32,6 @@
 
                     <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
                            placeholder="Ex: Data Science">
-
 
 
                     <div class="edit-profile-modal-save">
@@ -49,3 +48,4 @@
 </div>
 
 
+@Scripts.Render("~/bundles/jquery")

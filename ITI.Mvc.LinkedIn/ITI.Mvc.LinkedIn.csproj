@@ -408,7 +408,6 @@
     <Content Include="Views\ProfileManager\EditCourses.cshtml" />
     <Content Include="Views\ProfileManager\EditLanguage.cshtml" />
     <Content Include="Views\ProfileManager\EditSkills.cshtml" />
-    <Content Include="Views\Shared\_PartialAddSkill.cshtml" />
     <Content Include="Views\Shared\_PartialAddLanguage.cshtml" />
     <Content Include="Views\Shared\_PartialLanguageList.cshtml" />
     <Content Include="Views\ProfileManager\withoutEdit\_PartialProfileHeader.cshtml" />
@@ -430,6 +429,8 @@
     <Content Include="Views\Shared\_PartialProfilePagewithEdit.cshtml" />
     <Content Include="Views\Shared\_PartialProfileSkillswithedit.cshtml" />
     <Content Include="Views\Shared\_PartialCreateExperience.cshtml" />
+    <Content Include="Views\Shared\_PartialCreateSkill.cshtml" />
+    <Content Include="Views\Shared\_PartialCreateEducation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
