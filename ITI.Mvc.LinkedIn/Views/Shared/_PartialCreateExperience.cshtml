@@ -1,77 +1,37 @@
-﻿@using ITI.Mvc.LinkedIn.ViewModels
+﻿@model ITI.Mvc.LinkedIn.ViewModels.CompanyViewModel
 
-@using ITI.Mvc.LinkedIn.Models.Entities
-@model  ITI.Mvc.LinkedIn.ViewModels.AppUserViewModel
-<!-- Experience  section -->
-<!------------------------------->
-<!------------------------------->
-<!------------------------------->
-<div id="CompaniesList" class="experience col-lg-push-2 col-lg-8 col-xs-11">
-
-    <div class="row experience-header">
-        <div class="title col-xs-3">Experience</div>
-        <a href="" data-toggle="modal" data-target="#add-experience-modal">
-            <div class="add-experience col-xs-1 col-xs-push-8">
-                <i class="fas fa-plus-circle"></i>
-            </div>
-        </a>
-    </div>
-
-    @foreach (var item in Model.Companies)
-
-    {
-        <div class="row experience-body">
-
-            <div class="row experience-unit col-xs-8">
-
-                <div class="experience-unit-logo col-xs-1">
-                    <i class="fas fa-place-of-worship"></i>
-                </div>
-
-                <div class="experience-unit-details col-xs-10">
-                    <div class="experience-unit-title">@item.Title</div>
-                    <span class="experience-unit-name">@item.Industry</span>
-                    <div class="experience-unit-start-end-year">@item.StartDate-@item.EndDate</div>
-                </div>
-
-            </div>
-
-            <a href="" data-toggle="modal" data-target="#edit-experience-modal">
-                <div class="edit-experience-unit col-xs-1 col-xs-push-3">
-                    <i class="fas fa-pen"></i>
-                </div>
-            </a>
-
-        </div>
-
-    }
-</div>
-
-
-@Html.Partial("_PartialCreateExperience", new CompanyViewModel())
-
-
-<!-- (2)Edit Experience Modal -->
-<div class="modal fade edit-education-modal" id="edit-experience-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-
-    <form>
+<!-- (1)Add Experience Modal -->
+<div class="modal fade add-education-modal" id="add-experience-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog " role="document">
 
-            <div class="modal-content edit-experience-modal-content">
-                <div class="modal-header edit-experience-modal-header">
-                    <span class="edit-experience-modal-titl">Edit Experience</span>
+            <div class="modal-content add-experience-modal-content">
+                <div class="modal-header add-experience-modal-header">
+                    <span class="add-experience-modal-titl">Add Experience</span>
                     <a class="close " data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" class="x">&times;</span>
                     </a>
                 </div>
 
 
-                <form class="edit-experience-modal-form">
+@using (Ajax.BeginForm("AddCompanies", "ProfileManager", null, new AjaxOptions
+{
+    HttpMethod = "POST",
+
+    InsertionMode = InsertionMode.ReplaceWith, //target element(#) will be replaced
+    UpdateTargetId = "CompaniesList",
+    //LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
+}, new { @class = "add-experience-modal-form", id = "addexperience" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
 
                     <label class="edit-profile-modal-form-lable">Title &nbsp;&nbsp;<span class="requied">*</span></label>
                     <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
                            placeholder="Ex: Manager">
-
+                
                     <label class="edit-profile-modal-form-lable">Company &nbsp;&nbsp;<span class="requied">*</label>
                     <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
                            placeholder="Ex: Microsoft">
@@ -167,25 +127,47 @@
                         </ul>
                     </div>
 
+
+                    <label class="edit-profile-modal-form-lable">Industry &nbsp;&nbsp;<span class="requied">*</label>
+                    <div class="dropdown ">
+                        <button class="btn btn-default dropdown-toggle edit-profile-modal-form-dropdownlist" type="button"
+                                id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Civil Engineer
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu edit-profile-modal-form-dropdownlist" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Civil Engineer</a></li>
+                            <li><a href="#">Graphic Designer</a></li>
+                            <li><a href="#">Marketing Manager</a></li>
+                            <li><a href="#">Games Developer</a></li>
+                            <li><a href="#">Games Artist</a></li>
+                            <li><a href="#">Softeware Developer</a></li>
+
+                        </ul>
+                    </div>
+
+                    <label class="edit-profile-modal-form-lable">HeadLine &nbsp;&nbsp;<span class="requied">*</label>
+                    <textarea class="form-control edit-profile-modal-form-textarea" rows="2"></textarea>
+
                     <label class="edit-profile-modal-form-lable">Description</label>
                     <textarea class="form-control edit-profile-modal-form-textarea" rows="3"></textarea>
 
                     <div class="edit-profile-modal-save">
-                        <button type="submit" class="btn edit-profile-modal-save-btn">Save</button>
+                        <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('addexperience').submit()">Create</a>
+
                     </div>
 
-                </form>
 
 
-
-
+}
 
 
 
 
             </div>
         </div>
-    </form>
 
 
 </div>
+
+

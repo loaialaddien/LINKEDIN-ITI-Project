@@ -1,11 +1,12 @@
-﻿@using ITI.Mvc.LinkedIn.Models.Entities
+﻿@using ITI.Mvc.LinkedIn.ViewModels
+@using ITI.Mvc.LinkedIn.Models.Entities
 @model ITI.Mvc.LinkedIn.ViewModels.AppUserViewModel
 
 
 
 <!-- Skills  section -->
 <!------------------------------->
-<div class="experience col-lg-push-2 col-lg-8 col-xs-11">
+<div id="Skills-container" class="experience col-lg-push-2 col-lg-8 col-xs-11">
 
     <div class="row experience-header">
         <div class="title col-xs-4">Skills & Endorsements</div>
@@ -47,40 +48,7 @@
 
 <!-- (1)Add Skills Modal -->
 
-<div class="modal fade add-education-modal add-skill-modal" id="add-skill-modal" tabindex="-1" role="dialog"
-     aria-labelledby="myLargeModalLabel">
-    <form>
-        <div class="modal-dialog " role="document">
-
-            <div class="modal-content add-experience-modal-content">
-                <div class="modal-header add-experience-modal-header">
-                    <span class="add-experience-modal-titl">Add Skill</span>
-                    <a class="close " data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" class="x">&times;</span>
-                    </a>
-                </div>
-
-
-                <form class="add-experience-modal-form add-skill-modal-form">
-
-                    <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
-                           placeholder="Ex: Data Science">
-
-
-
-                    <div class="edit-profile-modal-save">
-                        <button type="submit" class="btn edit-profile-modal-save-btn">Add</button>
-                    </div>
-                </form>
-
-            </div>
-        </div>
-    </form>
-
-
-</div>
-
-
+@Html.Partial("_PartialCreateSkill",new SkillViewModel())
 
 
 <!-- (2)Edit Skills Modal -->

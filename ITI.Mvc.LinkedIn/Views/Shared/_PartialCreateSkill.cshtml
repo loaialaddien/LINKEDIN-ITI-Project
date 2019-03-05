@@ -1,0 +1,51 @@
+﻿@model ITI.Mvc.LinkedIn.ViewModels.SkillViewModel
+
+<div class="modal fade add-education-modal add-skill-modal" id="add-skill-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog " role="document">
+
+            <div class="modal-content add-experience-modal-content">
+                <div class="modal-header add-experience-modal-header">
+                    <span class="add-experience-modal-titl">Add Skill</span>
+                    <a class="close " data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="x">&times;</span>
+                    </a>
+                </div>
+
+
+
+@using (Ajax.BeginForm("AddSkills", "ProfileManager", null, new AjaxOptions
+{
+    HttpMethod = "POST",
+
+    InsertionMode = InsertionMode.ReplaceWith, //target element(#) will be replaced
+    UpdateTargetId = "courses-container",
+    //LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
+}, new { @class = "add-experience-modal-form add-skill-modal-form", id = "addskillform" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+                <form class="add-experience-modal-form add-skill-modal-form">
+
+                    <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
+                           placeholder="Ex: Data Science">
+
+
+
+                    <div class="edit-profile-modal-save">
+                        <button type="submit" class="btn edit-profile-modal-save-btn">Add</button>
+                        <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('addskillform').submit()">Create</a>
+
+                    </div>
+                </form>
+}
+            </div>
+        </div>
+
+
+</div>
+
+

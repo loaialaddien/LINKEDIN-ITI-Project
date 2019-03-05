@@ -249,12 +249,12 @@ namespace ITI.Mvc.LinkedIn.Controllers
 
                     string id = User.Identity.GetUserId();
 
-                    SkillViewModel myview = new SkillViewModel()
+                    AppUserViewModel myview = new AppUserViewModel()
                     {
-                        Myskills = mydatabase.SkillsUserManager.GetAllBind().Where(i => i.LinkedInUserId == id).ToList()
+                        Skills = mydatabase.SkillsUserManager.GetAllBind().Where(i => i.LinkedInUserId == id).ToList()
 
                     };
-                    return PartialView("_PartialSkillList", myview);
+                    return PartialView("_PartialProfileSkillswithedit", myview);
                 }
             }
             else
@@ -345,7 +345,7 @@ namespace ITI.Mvc.LinkedIn.Controllers
             Courses mycourse = new Courses
             {
 
-
+                 
                 LinkedInUserId = User.Identity.GetUserId(),
                 CourseName = viewmodel.course.CourseName
 
@@ -365,11 +365,17 @@ namespace ITI.Mvc.LinkedIn.Controllers
             }
             string userid = User.Identity.GetUserId();
 
-            AppUserViewModel viewModel = new AppUserViewModel()
+            AppUserViewModel myviewmodel = new AppUserViewModel()
             {
                 Courses = mydatabase.CoursesUserManager.GetAllBind().Where(i => i.LinkedInUserId == userid).ToList()
             };
-            return PartialView("_PartialProfilecourseswithedit", viewmodel);
+            if (Request.IsAjaxRequest())
+            {
+
+             return PartialView("_PartialProfilecourseswithedit", myviewmodel);
+            }
+            return PartialView("_PartialProfilecourseswithedit", myviewmodel);
+
         }
 
 
@@ -470,10 +476,21 @@ namespace ITI.Mvc.LinkedIn.Controllers
 
 
 
-                return RedirectToAction("UserProfile", "Account");
             }
+            string userid = User.Identity.GetUserId();
 
-            return View(viewmodel);
+            AppUserViewModel myviewmodel = new AppUserViewModel()
+            {
+                Companies = mydatabase.CompanyUserManager.GetAllBind().Where(i => i.LinkedInUserId == userid).ToList()
+            };
+            if (Request.IsAjaxRequest())
+            {
+
+                return PartialView("_PartialProfileExperiencewithedit", myviewmodel);
+            }
+            return RedirectToAction("UserProfile", "Account");
+
+            
         }
 
 

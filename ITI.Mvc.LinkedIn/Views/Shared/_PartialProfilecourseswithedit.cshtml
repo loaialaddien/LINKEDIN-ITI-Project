@@ -4,7 +4,7 @@
 @model  ITI.Mvc.LinkedIn.ViewModels.AppUserViewModel
 <!-- Courses  section -->
 <!------------------------------->
-<div class="courses col-lg-push-2 col-lg-8 col-xs-11">
+<div id="courses-container" class="courses col-lg-push-2 col-lg-8 col-xs-11">
     <div class="row experience-header">
 
         
@@ -20,7 +20,7 @@
     </div>
 
 
-    <div class=" experience-body" id="courses-container">
+    <div class=" experience-body" >
        
 
         @foreach (var item in Model.Courses)
@@ -111,3 +111,5 @@
 
 
 </div>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
