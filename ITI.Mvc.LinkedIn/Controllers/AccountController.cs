@@ -100,7 +100,7 @@ namespace ITI.Mvc.LinkedIn.Controllers
                 case SignInStatus.Failure:
                 default:
                     ModelState.AddModelError("", "Invalid login attempt.");
-                    return View(model);
+                    return View("LinRegisteration2");
             }
         }
 
@@ -143,7 +143,7 @@ namespace ITI.Mvc.LinkedIn.Controllers
                 case SignInStatus.Failure:
                 default:
                     ModelState.AddModelError("", "Invalid code.");
-                    return View(model);
+                    return View("LinRegisteration2");
             }
         }
 
@@ -183,7 +183,7 @@ namespace ITI.Mvc.LinkedIn.Controllers
             }
 
             // If we got this far, something failed, redisplay form
-            return View(model);
+            return View("LinRegisteration2");
         }
 
         //

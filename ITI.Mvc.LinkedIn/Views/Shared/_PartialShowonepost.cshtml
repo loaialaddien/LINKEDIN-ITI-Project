@@ -125,69 +125,82 @@
 
     </div>
 
-    <!-- Posts Likes-Comments-share buttons Section -->
     <div class="row col-xs-12 Likes-Comments-share-btns">
+        @*<button class="btn btn-primary like-btn"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;like</button>*@
         @Ajax.ActionLink("Like", "Like", "Posts", new { id = Model.post.Id }, new AjaxOptions
-   {
-       HttpMethod = "GET",
-       InsertionMode = InsertionMode.ReplaceWith,
-       UpdateTargetId = string.Format("post-{0}", Model.post.Id)
-   }, new { @class = "btn btn-primary like-btn" })
-        @* <button class="btn btn-primary like-btn"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;like</button>*@
+               {
+                   HttpMethod = "GET",
+                   InsertionMode = InsertionMode.ReplaceWith,
+                   UpdateTargetId = string.Format("post-{0}", Model.post.Id)
+               }, new { @class = "btn btn-primary like-btn fas fa-thumbs-up" })
+
         <button class="btn btn-primary comment-btn"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Comment</button>
         <button class="btn btn-primary share-btn"><i class="fas fa-share"></i>&nbsp;&nbsp;Share</button>
     </div>
-	<div class="row  comment-form-container col-xs-12">
+    <div class="row  comment-form-container col-xs-12">
 
-		<div class="comment-owner-img-container col-xs-2">
-			<div class="comment-owner-img ">
-				<img src="6.jpg" class="img-responsive">
-			</div>
-		</div>
+        <div class="comment-owner-img-container col-xs-2">
+            <div class="comment-owner-img ">
+                <img src="6.jpg" class="img-responsive">
+            </div>
+        </div>
 
-		@Html.Partial("_PartialCreateComment", new PostViewModel()
-	{
-		mypost = Model.post,
-		comment = new Comments()
-	})
+        @*<form class=" add-comment-form col-xs-10">
 
+                <input type="text" class=" form-control add-comment-field  col-xs-12" id="add-comment-field" placeholder="Add a Comment...">
+                <button class=" btn  add-comment-btn col-xs-4 col-lg-3 col-xs-push-8 col-lg-push-9" id="add-comment-btn">Comment</button>
+            </form>*@
 
-		<!-- comment-unit section -->
-		<div class="comment-units-container col-xs-12" id="comment-units-container">
-			<div class="row comment-unit col-xs-12" id="comment-unit">
-				<div class="comment-owner-img-container comment-unit-owner-img-container col-xs-2">
-					<a href="">
-						<div class="comment-owner-img ">
-							<img src="6.jpg" class="img-responsive">
-						</div>
-					</a>
-				</div>
-
-				<div class="comment-content col-xs-10 col-xs-push-1">
-					<p class="comment-text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda magni harum quia velit perferendis, officiis sunt cumque totam dolor modi dignissimos! Ad, assumenda magnam. Omnis unde accusantium ab tenetur.
-					</p>
-				</div>
-				<div class=" comment-replay-like col-xs-7 col-lg-push-3 col-xs-push-3">
-					<button class="btn btn-comment-like col-xs-2"><i class="fas fa-thumbs-up"></i></button>
-					<button class="btn show-likes-list-btn col-xs-5 col-lg-3 likes-link" data-toggle="modal" data-target="#comment-likes-list-modal">
-						<span aria-hidden="true">3 Likes</span>
-					</button>
-					<button class="btn btn-comment-replay col-xs-2"><i class="fas fa-comment-alt"></i></button>
-				</div>
+        @Html.Partial("_PartialCreateComment", new PostViewModel()
+               {
+                   mypost = Model.post,
+                   comment = new Comments()
+               })
 
 
+        <!-- comment-unit section -->
+        @foreach (Comments comment in Model.comments)
+        {
+
+            <div class="comment-units-container col-xs-12" id="comment-units-container">
+                <div class="row comment-unit col-xs-12" id="comment-unit">
+                    <div class="comment-owner-img-container comment-unit-owner-img-container col-xs-2">
+                        @{
+                            string result;
+                            if (Model.Commentators.TryGetValue(comment.Id, out result))
+                            {
+                                @Html.Raw(result)
+
+                            }
+                        }
+                        <a href="">
+                            <div class="comment-owner-img ">
+                                <img src="6.jpg" class="img-responsive">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="comment-content col-xs-10 col-xs-push-1">
+                        <p class="comment-text">
+                            @comment.CommentText
+                        </p>
+                    </div>
+                    <div class=" comment-replay-like col-xs-7 col-lg-push-3 col-xs-push-3">
+                        <button class="btn btn-comment-like col-xs-2"><i class="fas fa-thumbs-up"></i></button>
+                        <button class="btn show-likes-list-btn col-xs-5 col-lg-3 likes-link" data-toggle="modal" data-target="#comment-likes-list-modal">
+                            <span aria-hidden="true">3 Likes</span>
+                        </button>
+                        <button class="btn btn-comment-replay col-xs-2"><i class="fas fa-comment-alt"></i></button>
+                    </div>
+                </div>
 
 
-			</div>
+            </div>
+                            }
 
 
 
 
-
-		</div>
-
-	</div>
 
 
 
@@ -199,3 +212,12 @@
 
 
 </div>
+
+
+
+
+<!--Comments likes list modal -->
+    </div>
+
+
+
