@@ -1,0 +1,128 @@
+﻿@using ITI.Mvc.LinkedIn.Models.Entities
+@model ITI.Mvc.LinkedIn.ViewModels.AppUserViewModel
+
+
+
+<!-- Skills  section -->
+<!------------------------------->
+<div class="experience col-lg-push-2 col-lg-8 col-xs-11">
+
+    <div class="row experience-header">
+        <div class="title col-xs-4">Skills & Endorsements</div>
+
+        <a href="" data-toggle="modal" data-target="#add-skill-modal">
+            <div class="add-experience col-xs-1 col-xs-push-6">
+                <i class="fas fa-plus-circle"></i>
+            </div>
+        </a>
+
+        <a href="" data-toggle="modal" data-target="#edit-skill-modal">
+            <div class="add-experience col-xs-1 col-xs-push-6">
+                <i class="fas fa-pen"></i>
+            </div>
+        </a>
+    </div>
+
+    <div class="row experience-body">
+
+        <div class="row experience-unit col-xs-12">
+
+            @foreach (Skills item in Model.Skills)
+            {
+                <div class="skill-unit-details col-xs-12">
+                    <div class="Skill-name ">@item.Name</div>
+                </div>
+            }
+
+
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+<!-- (1)Add Skills Modal -->
+
+<div class="modal fade add-education-modal add-skill-modal" id="add-skill-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel">
+    <form>
+        <div class="modal-dialog " role="document">
+
+            <div class="modal-content add-experience-modal-content">
+                <div class="modal-header add-experience-modal-header">
+                    <span class="add-experience-modal-titl">Add Skill</span>
+                    <a class="close " data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="x">&times;</span>
+                    </a>
+                </div>
+
+
+                <form class="add-experience-modal-form add-skill-modal-form">
+
+                    <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
+                           placeholder="Ex: Data Science">
+
+
+
+                    <div class="edit-profile-modal-save">
+                        <button type="submit" class="btn edit-profile-modal-save-btn">Add</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </form>
+
+
+</div>
+
+
+
+
+<!-- (2)Edit Skills Modal -->
+<div class="modal fade  edit-skill-modal" id="edit-skill-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel">
+    <form >
+        <div class="modal-dialog " role="document">
+
+            <div class="modal-content add-experience-modal-content add-skill-modal-content">
+                <div class="modal-header add-experience-modal-header">
+                    <span class="add-experience-modal-titl">Edit Skills</span>
+                    <a class="close " data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="x">&times;</span>
+                    </a>
+                </div>
+
+
+                <form class="add-experience-modal-form ">
+
+                    @foreach (Skills item in Model.Skills)
+                    {
+                        <div class="skill-unit">
+                            <div class="skill-name col-xs-11">@item.Name</div>
+                            <a href="">
+                                <div class="skill-remove-icon  ">
+                                    <i class="far fa-trash-alt"></i>
+                                </div>
+                            </a>
+
+                        </div>
+                    }
+
+
+
+                    <div class="edit-profile-modal-save ">
+                        <button type="submit" class="btn edit-profile-modal-save-btn">Add</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </form>
+
+
+</div>

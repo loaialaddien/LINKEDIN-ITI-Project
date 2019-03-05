@@ -1,0 +1,52 @@
+﻿@model List<ITI.Mvc.LinkedIn.Models.ApplicationUser>
+@{
+    ViewBag.Title = "ShowAllUsers";
+}
+
+<h2>ShowAllUsers</h2>
+
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.Raw("Fname")
+        </th>
+        <th>
+            @Html.Raw("Lname")
+        </th>
+        <th>
+            @Html.Raw("PhoneNumber")
+        </th>
+        <th>
+            @Html.Raw("UserName")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.ActionLink("AddFriend", "Edit", new { id = item.UserName }) |
+                @Html.ActionLink("Show Profile", "Details", new { id = item.UserName }) |
+               
+
+
+            </td>
+        </tr>
+    }
+
+</table>

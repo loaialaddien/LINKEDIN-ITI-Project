@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel='stylesheet' href='bootstrap.css'>
+  <link rel='stylesheet' href='profile-style.css'>
+  <title>Profile page</title>
+</head>
+
+<body>
+
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-default navbar-fixed-top my-navbar">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+
+      <div class="collapse navbar-collapse  " id="navbar-collapse-1">
+
+        <form class="navbar-form navbar-left    ">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button class="btn btn-default search-btn form-group" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+
+        </form>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown navbar-list">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">
+              &nbsp;&nbsp;<i class="fas fa-th navbar-link-icon"></i>
+              <div class="navbar-link-text navbar-droplist-text">Work<span class="caret"></span></div>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="navbar-separator navbar-left "></div>
+
+
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown navbar-list">
+            <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">
+              <div class="me-image-icon">
+                <img src="6.jpg" class="img-responsive" alt="Responsive image">
+              </div>
+              <div class="navbar-link-text">Me<span class="caret"></span></div>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+
+        <ul class="nav navbar-nav navbar-right ">
+          <li class="navbar-list ">
+            <a href="#" class="navbar-link ">
+              &nbsp;<i class="fas fa-home navbar-link-icon"></i>
+              <div class="navbar-link-text">Home</div>
+            </a>
+          </li>
+
+          <li class="navbar-list">
+            <a href="#" class="navbar-link">
+              &nbsp;<i class="fas fa-user-friends navbar-link-icon"></i>
+              <div class="navbar-link-text">Network</div>
+            </a>
+          </li>
+
+          <li class="navbar-list">
+            <a href="#" class="navbar-link">
+              &nbsp;<i class="fas fa-briefcase navbar-link-icon"></i>
+              <div class="navbar-link-text">Jobs</div>
+            </a>
+          </li>
+
+          <li class="navbar-list">
+            <a href="#" class="navbar-link">
+              &nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-comments navbar-link-icon"></i>
+              <div class="navbar-link-text">Messaging</div>
+            </a>
+          </li>
+
+          <li class="navbar-list">
+            <a href="#" class="navbar-link">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-bell navbar-link-icon"></i>
+              <div class="navbar-link-text">Notifications</div>
+            </a>
+          </li>
+        </ul>
+
+
+
+
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <!-- Main profile section -->
+  <div class="  main-profile-section  col-lg-push-2 col-xs-11 col-lg-8">
+
+
+    <!-- COVER PHOTO  ROW     -->
+    <!-------------------------->
+    <a href="" data-toggle="modal" data-target="#cover-photo-modal">
+      <div class="row cover-img">
+        <img src="0 (1).jfif" class="img-responsive" alt="Responsive image">
+      </div>
+    </a>
+
+    <div class="modal fade " id="cover-photo-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <a class="close post-form-modal-cancel" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true" class="x">&times;</span>
+      </a>
+
+      <div class="modal-dialog " role="document">
+        <div class="modal-content post-form-modal-content">
+          <img src="0 (1).jfif" class="img-responsive" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+    <!-- PROFILE PHOTO  ROW     -->
+    <!---------------------------->
+    <div class="profile-img-container ">
+      <a href="" class="" data-toggle="modal" data-target="#profile-photo-modal">
+        <div class=" ">
+          <img src="6.jpg" class="img-responsive " alt="Responsive image">
+        </div>
+      </a>
+    </div>
+
+
+
+
+    <div class="modal fade " id="profile-photo-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <a class="close post-form-modal-cancel" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true" class="x">&times;</span>
+      </a>
+      <div class="modal-dialog " role="document">
+        <div class="modal-content post-form-modal-content">
+          <img src="6.jpg" class="img-responsive profile-img" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+
+    <!-- PROFILE Info  section -->
+    <!--------------------------->
+
+    <div class="row col-xs-12 profile-user-data">
+
+      <div class="profile-info   col-lg-4 col-xs-8 col-lg-push-2 col-xs-push-2">
+        <div class="user-name">Ahmed Alaa</div>
+        <div class="user-job">Civil Engineer</div>
+        <div class="user-country">Egypt</div>
+      </div>
+
+      <!-- <div class=" profile-edit  col-lg-4 col-xs-8 col-lg-pull-1 ">
+
+        
+      </div> -->
+
+
+
+      
+      
+
+      <div class="pro-info col-lg-4 col-xs-8  col-lg-push-4 ">
+        <a href="" class="profile-edit-link col-xs-10"><i class="fas fa-university"></i>&nbsp;&nbsp;Assiut University
+          </i></a>
+        <a href="" class="profile-edit-link col-xs-10"><i class="fas fa-book-open"></i>&nbsp;&nbsp;See Contacts</a>
+        <a href="" class="profile-edit-link col-xs-10" data-toggle="modal" data-target="#Connections-list-modal"><i
+            class="fas fa-user-friends"></i>&nbsp;&nbsp;See Connections</a>
+      </div>
+
+
+      <!-- See Connections list Modal -->
+      <div class="modal fade write-post-modal" id="Connections-list-modal" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel">
+        <!-- likes list  -->
+        <div class="Connections-list-modal ">
+          <!-- likes list header -->
+          <div class="row col-xs-12 Connections-list-modal-header">
+            <div class="no-of-connections col-xs-6">75 Connections</div>
+            <a class="close connections-list-modal-cancel" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="x">&times;</span>
+            </a>
+          </div>
+          <!-- like list index info body -->
+          <div class="col-xs-12 connections-list-modal-body">
+            <div class="row">
+              <div class="col-xs-3 ">
+                <a href="">
+                  <div class="connection-view-profile-img  ">
+                    <img src="6.jpg" class="img-responsive" alt="Responsive image">
+                  </div>
+                </a>
+
+              </div>
+
+              <div class="connection-data   col-xs-5">
+                <a href="" class="connection-owner ">
+                  <div class="connection-owner">Ahmed Ben Alaa</div>
+                </a>
+                <div class="connection-owner-titel">Civil Engineer</div>
+              </div>
+            </div>
+            <hr>
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+  <!-- Education  section -->
+  <!------------------------------->
+  <div class="education col-lg-push-2 col-lg-8 col-xs-11">
+
+    <div class="row education-header">
+      <div class="title col-xs-3">Education</div>
+      
+    </div>
+
+    <div class="row education-body">
+
+      <div class="row education-unit col-xs-8">
+
+        <div class="education-unit-logo col-xs-1">
+          <i class="fas fa-university"></i>
+        </div>
+
+        <div class="education-unit-details col-xs-10">
+          <div class="education-unit-name">Assiut University</div>
+          <span class="education-unit-degree">Bachelor's degree ,</span>
+          <span class="education-unit-field">Civil Engineering</span>
+          <span class="education-unit-grade">Very Good with Honor</span>
+          <div class="education-unit-start-end-year">2013-2017</div>
+        </div>
+
+      </div>
+
+      
+
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+  <!-- Experience  section -->
+  <!------------------------------->
+  <div class="experience col-lg-push-2 col-lg-8 col-xs-11">
+
+    <div class="row experience-header">
+      <div class="title col-xs-3">Experience</div>
+    </div>
+
+    <div class="row experience-body">
+
+        <div class="row experience-unit col-xs-8">
+  
+          <div class="experience-unit-logo col-xs-1">
+              <i class="fas fa-place-of-worship"></i>
+          </div>
+  
+          <div class="experience-unit-details col-xs-10">
+            <div class="experience-unit-title">Structural Design Engineer</div>
+            <span class="experience-unit-name">Eamar UAE</span>
+            <div class="experience-unit-start-end-year">2015-2017</div>
+          </div>
+  
+        </div>
+  
+
+  
+      </div>
+
+
+  </div>
+
+
+  
+
+
+
+  <!-- Skills  section -->
+  <!------------------------------->
+  <div class="experience col-lg-push-2 col-lg-8 col-xs-11">
+
+      <div class="row experience-header">
+        <div class="title col-xs-4">Skills & Endorsements</div>
+      </div>
+  
+      <div class="row experience-body">
+  
+          <div class="row experience-unit col-xs-12">
+
+            <div class="skill-unit-details col-xs-12">
+              <div class="Skill-name ">C programming Language</div>
+            </div>
+            
+            <div class="skill-unit-details col-xs-12">
+                <div class="Skill-name ">Front End Devoloping</div>
+            </div>
+            
+            <div class="skill-unit-details col-xs-12">
+                <div class="Skill-name ">Revit Structure</div>
+            </div>
+          </div>
+    
+          
+    
+        </div>
+  
+  
+  </div>
+
+
+  
+
+
+  <!-- Languages  section -->
+  <!------------------------------->
+  <div class="languages col-lg-push-2 col-lg-8 col-xs-11">
+      <div class="row experience-header">
+          <div class="title col-xs-4">Languages</div>
+        </div>
+    
+
+        <div class=" experience-body">
+            <div class="row experience-unit skill-unit-details col-xs-12"> 
+              <div class="Skill-name col-xs-10"><i class="fas fa-language"></i>&nbsp;&nbsp; Arabic</div>
+            </div>
+
+            <div class="row experience-unit skill-unit-details col-xs-12"> 
+              <div class="Skill-name col-xs-10"><i class="fas fa-language"></i>&nbsp;&nbsp;English</div>   
+            </div>
+
+            <div class="row experience-unit skill-unit-details col-xs-12"> 
+              <div class="Skill-name col-xs-10"><i class="fas fa-language"></i>&nbsp;&nbsp;Russian</div>  
+            </div>
+
+            <div class="row experience-unit skill-unit-details col-xs-12"> 
+              <div class="Skill-name col-xs-10"><i class="fas fa-language"></i>&nbsp;&nbsp;German</div>
+            </div>
+
+            
+            
+      
+            
+      
+          </div>
+  </div>
+
+
+
+  
+
+
+
+  <!-- Courses  section -->
+  <!------------------------------->
+  <div class="courses col-lg-push-2 col-lg-8 col-xs-11">
+      <div class="row experience-header">
+          <div class="title col-xs-4">Courses</div>
+          
+          
+  
+          
+        </div>
+    
+
+        <div class=" experience-body">
+            <div class="row experience-unit skill-unit-details col-xs-12"> 
+              <div class="Skill-name col-xs-10"><i class="fas fa-thumbtack"></i>&nbsp;&nbsp; Revit Structure</div>
+             
+              
+            </div>
+
+            <div class="row experience-unit skill-unit-details col-xs-12"> 
+                <div class="Skill-name col-xs-10"><i class="fas fa-thumbtack"></i>&nbsp;&nbsp;AutoCAD</div>
+                
+            </div>
+
+            <div class="row experience-unit skill-unit-details col-xs-12"> 
+                <div class="Skill-name col-xs-10"><i class="fas fa-thumbtack"></i>&nbsp;&nbsp;SAP2000</div>
+                
+            </div>
+
+            <div class="row experience-unit skill-unit-details col-xs-12"> 
+                <div class="Skill-name col-xs-10"><i class="fas fa-thumbtack"></i>&nbsp;&nbsp;ETABS</div>
+                
+            </div>
+
+            
+            
+      
+            
+      
+          </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+  <div class="profile-footer">
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Messages Menu Section -->
+  <div class="message-menu col-lg-2 col-lg-offset-9 visible-lg navbar-fixed-bottom">
+    <div class=" container-fluid  btn  my-2 my-sm-0 message-btn  col-lg-1 col-xs-12 " id="messege-btn">
+      <div class="message-btn-text col-lg-3">Messages</div>
+      <div class="message-btn-icons col-lg-4 col-lg-offset-5">
+        <i class="far fa-edit "></i>
+        <i class="fas fa-cog"></i>
+      </div>
+    </div>
+
+    <div class="container-fluid  message-menu-body" id="message-body"></div>
+  </div>
+
+
+  <script src='jquery-3.3.1.min.js'></script>
+  <script src='bootstrap.min.js'></script>
+  <script src='profile-app.js'></script>
+</body>
+
+</html>

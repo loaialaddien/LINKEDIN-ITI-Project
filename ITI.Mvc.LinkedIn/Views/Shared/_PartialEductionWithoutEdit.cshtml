@@ -1,0 +1,31 @@
+﻿@using ITI.Mvc.LinkedIn.Models.Entities
+@*@model ITI.Mvc.LinkedIn.ViewModels.AppUserViewModel*@
+<div class="education col-lg-push-2 col-lg-8 col-xs-11">
+
+    <div class="row education-header">
+        <div class="title col-xs-3">Education</div>
+
+    </div>
+
+    <div class="row education-body">
+        @foreach(UserEducation item in Model.EducationList) {
+        <div class="row education-unit col-xs-8">
+
+            <div class="education-unit-logo col-xs-1">
+                <i class="fas fa-university"></i>
+            </div>
+           
+            <div class="education-unit-details col-xs-10">
+                <div class="education-unit-name">@item.University.Name</div>
+                <span class="education-unit-degree">@item.Degree ,</span>
+                <span class="education-unit-field">@item.Faculty.FacultyName</span>
+                <span class="education-unit-grade">Very Good with Honor</span>
+                <div class="education-unit-start-end-year">2013-2017</div>
+            </div>
+
+        </div>
+        }
+
+
+    </div>
+</div>

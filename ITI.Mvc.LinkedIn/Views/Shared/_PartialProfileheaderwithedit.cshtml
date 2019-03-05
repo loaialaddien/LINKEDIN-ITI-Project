@@ -1,0 +1,295 @@
+﻿@using ITI.Mvc.LinkedIn.Models.Entities
+@model ITI.Mvc.LinkedIn.ViewModels.AppUserViewModel
+
+
+
+
+<!-- Main profile section -->
+<div class="  main-profile-section  col-lg-push-2 col-xs-11 col-lg-8">
+
+
+    <!-- COVER PHOTO  ROW     -->
+    <!-------------------------->
+    <a href="" data-toggle="modal" data-target="#cover-photo-modal">
+        <div class="row cover-img">
+            <img src="~/Style and structure/Profile-Page/0 (1).jfif" class="img-responsive" alt="Responsive image">
+        </div>
+    </a>
+
+    <div class="modal fade " id="cover-photo-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <a class="close post-form-modal-cancel" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="x">&times;</span>
+        </a>
+
+
+        <div class="modal-dialog " role="document">
+            <div class="modal-content post-form-modal-content">
+                <img src="~/Style and structure/Profile-Page/0 (1).jfif" class="img-responsive" alt="Responsive image">
+            </div>
+        </div>
+    </div>
+    <!-- PROFILE PHOTO  ROW     -->
+    <!---------------------------->
+    <div class="profile-img-container ">
+        <a href="" class="" data-toggle="modal" data-target="#profile-photo-modal">
+            <div class=" col-xs-push-4 col-lg-push-2">
+                <img src="~/Style and structure/Profile-Page/6.jpg" class="img-responsive " alt="Responsive image">
+            </div>
+        </a>
+    </div>
+
+
+
+
+    <div class="modal fade " id="profile-photo-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <a class="close post-form-modal-cancel" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="x">&times;</span>
+        </a>
+        <div class="modal-dialog " role="document">
+            <div class="modal-content post-form-modal-content">
+                <img src="~/Style and structure/Profile-Page/6.jpg" class="img-responsive profile-img" alt="Responsive image">
+            </div>
+        </div>
+    </div>
+
+    <!-- PROFILE Info  section -->
+    <!--------------------------->
+
+    <div class="row col-xs-12 profile-user-data">
+
+        <div class="profile-info   col-lg-4 col-xs-8 col-lg-push-5 col-xs-push-2">
+            <div class="user-name">Ahmed Alaa</div>
+            <div class="user-job">Civil Engineer</div>
+            <div class="user-country">Egypt</div>
+        </div>
+
+        <div class=" profile-edit  col-lg-4 col-xs-8 col-lg-pull-4 ">
+
+            <a href="" class="profile-edit-link col-xs-10" data-toggle="modal" data-target="#edit-profile">
+                Edit
+                &nbsp;&nbsp;<i class="fas fa-pen"></i>
+            </a>
+            <div class="add-section col-xs-10">Add Profile Section</div>
+        </div>
+
+
+
+        <!-- Edit Profile Info Modal -->
+        <div class="modal fade edit-profile-modal" id="edit-profile" tabindex="-1" role="dialog"
+             aria-labelledby="myLargeModalLabel">
+            <form>
+                <div class="modal-dialog " role="document">
+
+                    <div class="modal-content edit-profile-modal-content">
+                        <div class="modal-header edit-profile-modal-header">
+                            <span class="edit-profile-modal-titl">Edit Intro</span>
+                            <a class="close " data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="x">&times;</span>
+                            </a>
+                        </div>
+                        <div class="edit-profile-modal-coverphoto">
+                            <div class=" coverphoto">
+                                <img src="0 (1).jfif" class="" alt="Responsive image">
+                            </div>
+                        </div>
+
+                        <a href="" class="" data-toggle="modal" data-target="#edit-profile-img-modal">
+                            <div class="modal-profile-img-container">
+                                <!-- <input type="file" class="upload"> -->
+                                <img src="6.jpg" class="profilephoto" alt="Responsive image">
+                            </div>
+                        </a>
+
+
+
+
+                        <form class="edit-profile-modal-form">
+                            <label class="edit-profile-modal-form-lable">
+                                First Name&nbsp;&nbsp;<span class="requied">*</span>
+                            </label>
+                            <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
+                                   placeholder="First Name">
+
+                            <label class="edit-profile-modal-form-lable">Last Name&nbsp;&nbsp;<span class="requied">*</span></label>
+                            <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
+                                   placeholder="Last Name">
+
+                            <label class="edit-profile-modal-form-lable">HeadLine&nbsp;&nbsp;<span class="requied">*</span></label>
+                            <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
+                                   placeholder="HeadLine">
+
+                            <label class="edit-profile-modal-form-lable">Current Position</span></label>
+                            <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
+                                   placeholder="Current Position">
+
+                            <label class="edit-profile-modal-form-lable">Education</span></label>
+                            <div class="dropdown ">
+                                <button class="btn btn-default dropdown-toggle edit-profile-modal-form-dropdownlist" type="button"
+                                        id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Assiut
+                                    University
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu edit-profile-modal-form-dropdownlist" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Assiut University</a></li>
+                                    <li><a href="#">Elmasoura University</a></li>
+                                    <li><a href="#">Elshouroq Academy</a></li>
+                                </ul>
+                            </div>
+
+                            <label class="edit-profile-modal-form-lable">
+                                Country/Region&nbsp;&nbsp;<span class="requied">*</span>
+                            </label>
+                            <div class="dropdown ">
+                                <button class="btn btn-default dropdown-toggle edit-profile-modal-form-dropdownlist" type="button"
+                                        id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Egypt
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu edit-profile-modal-form-dropdownlist" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Egypt</a></li>
+                                    <li><a href="#">USA</a></li>
+                                    <li><a href="#">UAE</a></li>
+                                </ul>
+                            </div>
+
+
+                            <label class="edit-profile-modal-form-lable">ZIP code</span></label>
+                            <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
+                                   placeholder="ZIP code">
+
+                            <label class="edit-profile-modal-form-lable">Industry&nbsp;&nbsp;<span class="requied">*</span></label>
+                            <div class="dropdown ">
+                                <button class="btn btn-default dropdown-toggle edit-profile-modal-form-dropdownlist" type="button"
+                                        id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Civil Engineer
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu edit-profile-modal-form-dropdownlist" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Civil Engineer</a></li>
+                                    <li><a href="#">Softeware Developer</a></li>
+                                    <li><a href="#">Architect</a></li>
+                                </ul>
+                            </div>
+
+                            <label class="edit-profile-modal-form-lable">Summary</span></label>
+                            <textarea class="form-control edit-profile-modal-form-textarea" rows="3"></textarea>
+
+                            <div class="edit-profile-modal-save">
+                                <button type="submit" class="btn edit-profile-modal-save-btn">Save</button>
+                            </div>
+                        </form>
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+
+        <div class="pro-info col-lg-4 col-xs-8  col-lg-push-1 ">
+            <a href="" class="profile-edit-link col-xs-10">
+                <i class="fas fa-university"></i>&nbsp;&nbsp;Assiut University</i>
+            </a>
+            <a href="" class="profile-edit-link col-xs-10"><i class="fas fa-book-open"></i>&nbsp;&nbsp;See Contacts</a>
+            <a href="" class="profile-edit-link col-xs-10" data-toggle="modal" data-target="#Connections-list-modal">
+                <i class="fas fa-user-friends"></i>&nbsp;&nbsp;See Connections
+            </a>
+        </div>
+
+
+        <!-- See Connections list Modal -->
+        <div class="modal fade write-post-modal" id="Connections-list-modal" tabindex="-1" role="dialog"
+             aria-labelledby="myLargeModalLabel">
+            <!-- likes list  -->
+            <div class="Connections-list-modal ">
+                <!-- likes list header -->
+                <div class="row col-xs-12 Connections-list-modal-header">
+                    <div class="no-of-connections col-xs-6">75 Connections</div>
+                    <a class="close connections-list-modal-cancel" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="x">&times;</span>
+                    </a>
+                </div>
+                <!-- like list index info body -->
+                <div class="col-xs-12 connections-list-modal-body">
+                    <div class="row">
+                        <div class="col-xs-3 ">
+                            <a href="">
+                                <div class="connection-view-profile-img  ">
+                                    <img src="6.jpg" class="img-responsive" alt="Responsive image">
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="connection-data   col-xs-5">
+                            <a href="" class="connection-owner ">
+                                <div class="connection-owner">Ahmed Ben Alaa</div>
+                            </a>
+                            <div class="connection-owner-titel">Civil Engineer</div>
+                        </div>
+                    </div>
+                    <hr>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+<!-- PROFILE STRENGHT  section -->
+<!------------------------------->
+<div class="profile-strength col-lg-push-2 col-lg-8 col-xs-11 ">
+    <img src="~/Style and structure/Profile-Page/1.png" class="img-responsive profile-strength-img" alt="Responsive image">
+</div>
+
+
+
+
+
+
+@*<div class="education col-lg-push-2 col-lg-8 col-xs-11">
+
+        <div class="row education-header">
+            <div class="title col-xs-3">Education</div>
+
+        </div>
+
+        <div class="row education-body">
+            @foreach (UserEducation item in Model.EducationList)
+            {
+                <div class="row education-unit col-xs-8">
+
+                    <div class="education-unit-logo col-xs-1">
+                        <i class="fas fa-university"></i>
+                    </div>
+
+                    <div class="education-unit-details col-xs-10">
+                        <div class="education-unit-name">@item.University.Name</div>
+                        <span class="education-unit-degree">@item.Degree ,</span>
+                        <span class="education-unit-field">@item.Faculty.FacultyName</span>
+                        <span class="education-unit-grade">Very Good with Honor</span>
+                        <div class="education-unit-start-end-year">2013-2017</div>
+                    </div>
+
+                </div>
+            }
+
+
+        </div>
+    </div>*@

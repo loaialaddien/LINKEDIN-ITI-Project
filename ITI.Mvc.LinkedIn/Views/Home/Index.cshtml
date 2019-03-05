@@ -1,0 +1,92 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <link href="~/Style and structure/Login-Page/bootstrap.css" rel="stylesheet" />
+
+    <link href="~/Style and structure/Home-Page/home-style.css" rel="stylesheet" />
+   
+    <link href="~/Style and structure/Login-Page/style.css" rel="stylesheet" />
+    <link href="~/Style and structure/Profile(2)-Page/profile-style.css" rel="stylesheet" />
+    <link href="~/Style and structure/Search-Page/search-style.css" rel="stylesheet" />
+    <link href="~/Style and structure/Loading-Page/loading-style.css" rel="stylesheet" />
+    </head>
+<body>
+
+    @Html.Partial("_PartialTopNavBar")
+    @*@Html.Partial("_PartialProfileHeader@*")*@
+
+
+    <div id="LoadingPage" class='face' hidden>
+        <div class='container'>
+            <div class="main-icon">
+                <i class="fab fa-linkedin"></i>
+            </div>
+
+            <span class='loading'></span>
+            <div class="caption">
+                <h2>Opportunities</h2>
+                <ul>
+                    <li>O</li>
+                    <li>N</li>
+                    <li>T</li>
+                    <li>H</li>
+                    <li>E</li>
+                    <li>W</li>
+                    <li>A</li>
+                    <li>Y</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+        <div id="replacing">
+
+        </div>
+
+        <script src="~/Style and structure/Home-Page/jquery-3.3.1.min.js"></script>
+        <script src="~/Style and structure/Home-Page/jquery-1.10.2.min.js"></script>
+        <script src="~/Style and structure/Home-Page/home-app.js"></script>
+        <script src="~/Style and structure/Home-Page/bootstrap.min.js"></script>
+        <script src="~/Style and structure/Login-Page/app.js"></script>
+        <script src="~/Style and structure/Profile(2)-Page/profile-app.js"></script>
+        <script src="~/Style and structure/Search-Page/search-app.js"></script>
+        <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+        <script src="~/Scripts/jquery.validate.min.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+        <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script type="text/javascript">
+        function showLoadingPage() {
+    $('#LoadingPage').show();
+        @*$('#LoadingPage').append(
+                '<img src="@Url.Content("~/Images/AjaxLoaderImg.gif")" alt="Loading..."class="ajax-loader" />')*@
+     ;
+ }
+
+        function hideLoadingPage() {
+     setTimeout(function () {
+         //$('.ajax-loader').remove();
+         $('#LoadingPage').hide();
+     },2000);
+        }
+        function Logoff() {
+            $('#logofflink').click(function () {
+                $('#logoutForm').submit();
+            })
+        }
+    </script>
+</body>
+
+</html>
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryajax", "~/bundles/bootstrap", "~/bundles/jquery")
+
+}*@

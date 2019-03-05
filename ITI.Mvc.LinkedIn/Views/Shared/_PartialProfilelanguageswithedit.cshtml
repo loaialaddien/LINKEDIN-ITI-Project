@@ -1,0 +1,159 @@
+﻿@using ITI.Mvc.LinkedIn.Models.Entities
+@model ITI.Mvc.LinkedIn.ViewModels.AppUserViewModel
+<!-- Languages  section -->
+<!------------------------------->
+<div class="languages col-lg-push-2 col-lg-8 col-xs-11">
+    <div class="row experience-header">
+        <div class="title col-xs-4">Languages</div>
+
+        <a href="" data-toggle="modal" data-target="#add-language-modal">
+            <div class="add-experience col-xs-1 col-xs-push-7">
+                <i class="fas fa-plus-circle"></i>
+            </div>
+        </a>
+
+
+    </div>
+
+
+    <div class=" experience-body">
+        @foreach (Language item in Model.Languages)
+        {
+            <div class="row experience-unit skill-unit-details col-xs-12">
+                <div class="Skill-name col-xs-10">@item.Name</div>
+                <a href="">
+                    <div class="skill-remove-icon  col-xs-1">
+                        <i class="far fa-trash-alt"></i>
+                    </div>
+                </a>
+                <a href="" data-toggle="modal" data-target="#edit-language-modal">
+                    <div class="add-experience col-xs-1 ">
+                        <i class="fas fa-pen"></i>
+                    </div>
+                </a>
+
+            </div>
+        }
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+<!-- (1)Add Languages Modal -->
+<div class="modal fade add-education-modal add-skill-modal" id="add-language-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel">
+    <form>
+        <div class="modal-dialog " role="document">
+
+            <div class="modal-content add-experience-modal-content">
+                <div class="modal-header add-experience-modal-header">
+                    <span class="add-experience-modal-titl">Add Skill</span>
+                    <a class="close " data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="x">&times;</span>
+                    </a>
+                </div>
+
+
+                <form class="add-experience-modal-form add-skill-modal-form">
+
+                    <label class="edit-profile-modal-form-lable">Language</label>
+                    <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput" placeholder="Ex: Arabic">
+
+
+                    <label class="edit-profile-modal-form-lable">Proficiency</label>
+                    <div class="dropdown ">
+
+                        <button class="btn btn-default dropdown-toggle edit-profile-modal-form-dropdownlist" type="button"
+                                id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Nativ or Bilingual Proficiency
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu edit-profile-modal-form-dropdownlist" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Elementry Proficiency</a></li>
+                            <li><a href="#">Limited Working Proficiency</a></li>
+                            <li><a href="#">Profitional Working Proficiency</a></li>
+                            <li><a href="#">Full Profitional Proficiency</a></li>
+                            <li><a href="#">Nativ or Bilingual Proficiency</a></li>
+                        </ul>
+                    </div>
+
+
+
+
+
+                    <div class="edit-profile-modal-save">
+                        <button type="submit" class="btn edit-profile-modal-save-btn">Add</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </form>
+
+
+</div>
+
+
+
+
+<!-- (2)Edit Languages Modal -->
+<div class="modal fade add-education-modal add-skill-modal" id="edit-language-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel">
+    <form>
+        <div class="modal-dialog " role="document">
+
+            <div class="modal-content add-experience-modal-content">
+                <div class="modal-header add-experience-modal-header">
+                    <span class="add-experience-modal-titl">Add Skill</span>
+                    <a class="close " data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="x">&times;</span>
+                    </a>
+                </div>
+
+
+                <form class="add-experience-modal-form add-skill-modal-form">
+
+                    <label class="edit-profile-modal-form-lable">Language</label>
+                    <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput" placeholder="Ex: Arabic">
+
+
+                    <label class="edit-profile-modal-form-lable">Proficiency</label>
+                    <div class="dropdown ">
+
+                        <button class="btn btn-default dropdown-toggle edit-profile-modal-form-dropdownlist" type="button"
+                                id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Nativ or Bilingual Proficiency
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu edit-profile-modal-form-dropdownlist" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Elementry Proficiency</a></li>
+                            <li><a href="#">Limited Working Proficiency</a></li>
+                            <li><a href="#">Profitional Working Proficiency</a></li>
+                            <li><a href="#">Full Profitional Proficiency</a></li>
+                            <li><a href="#">Nativ or Bilingual Proficiency</a></li>
+                        </ul>
+                    </div>
+
+
+
+
+
+                    <div class="edit-profile-modal-save">
+                        <button type="submit" class="btn edit-profile-modal-save-btn">Save</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </form>
+
+
+</div>

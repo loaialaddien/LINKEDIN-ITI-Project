@@ -1,0 +1,24 @@
+﻿@model ITI.Mvc.LinkedIn.Models.LoginViewModel
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top login-navbar">
+    <div class="login-brand" id="login">Linked<i class="fab fa-linkedin"></i></div>
+    <button class="navbar-toggler my-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+@using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post))
+{
+    <div class="collapse navbar-collapse login-form" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto"></ul>
+       
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control mr-sm-2 login-email" })
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control mr-sm-2 login-password" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+          
+            <button class="btn  my-2 my-sm-0 login-btn" type="submit">Sign in</button>
+       
+    </div>
+}
+</nav>

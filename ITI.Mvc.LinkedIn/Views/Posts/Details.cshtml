@@ -1,0 +1,50 @@
+﻿@model ITI.Mvc.LinkedIn.Models.Entities.Posts
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Posts</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OwnerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OwnerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfCreation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfCreation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoOfLikes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoOfLikes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoOfComments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoOfComments)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

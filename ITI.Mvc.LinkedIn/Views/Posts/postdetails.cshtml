@@ -1,0 +1,86 @@
+﻿@model ITI.Mvc.LinkedIn.PostDetailViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Posts</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.post.DateOfCreation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.post.DateOfCreation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.post.NoOfLikes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.post.NoOfLikes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.post.NoOfComments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.post.NoOfComments)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.posttext.PostText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.posttext.PostText)
+        </dd>
+
+    </dl>
+    </div>
+
+
+
+    @foreach (var item in Model.comments)
+    {
+
+
+            <tr>
+
+               
+                <td>
+                    @{
+                        string result;
+                        if (Model.Commentators.TryGetValue(item.Id, out result))
+                        {
+                           @Html.Raw(result)
+
+                        }
+                    }
+                </td> 
+                <td>
+                    @Html.DisplayFor(modelItem => item.CommentText)
+                </td>
+
+            
+            </tr>
+        
+    }
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.post.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

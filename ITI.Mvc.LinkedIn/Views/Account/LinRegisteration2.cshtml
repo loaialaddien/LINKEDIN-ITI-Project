@@ -1,0 +1,149 @@
+﻿@using ITI.Mvc.LinkedIn.Models
+@model ITI.Mvc.LinkedIn.Models.RegisterViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>LinRegisteration2</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link href="~/Style and structure/Login-Page/bootstrap.css" rel="stylesheet" />
+    <link href="~/Style and structure/Login-Page/style.css" rel="stylesheet" />
+</head>
+<body>
+
+    @Html.Partial("_LinLoginPartial", new LoginViewModel())
+
+
+
+
+
+
+    <div class="animate-background">
+        <div id="particles-js"></div>
+    </div>
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="container">
+            <div class="register-box">
+                <div class="reg-head">
+                    <h3>Be great at what you do</h3>
+                    <h6>Get started - it's free.</h6>
+                    <hr class="breaker" />
+                </div>
+
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+
+
+                <div class="form-group reg-group">
+                    @Html.LabelFor(m => m.Fname, new { @class = "reg-lable" })
+
+                    @Html.TextBoxFor(m => m.Fname, htmlAttributes: new { @class = "form-control reg-control", @id = "formGroupExampleInput" })
+
+                </div>
+
+                <div class="form-group reg-group">
+                    @Html.LabelFor(m => m.Lname, new { @class = "reg-lable" })
+                    @Html.TextBoxFor(m => m.Lname, htmlAttributes: new { @class = "form-control reg-control", @id = "formGroupExampleInput2" })
+
+
+                </div>
+                <div class="form-group reg-group">
+                    @Html.LabelFor(m => m.Email, new { @class = "reg-lable" })
+                    @Html.TextBoxFor(m => m.Email, htmlAttributes: new { @class = "form-control reg-control", @id = "formGroupExampleInput2" })
+
+                </div>
+                <div class="form-group reg-group">
+                    @Html.LabelFor(m => m.Password, new { @class = "reg-lable" })
+                    @Html.PasswordFor(m => m.Password, htmlAttributes: new { @class = "form-control reg-control", @id = "formGroupExampleInput2" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger", @placeholder = "Password" })
+
+
+
+
+
+
+                </div>
+                <div class="form-group reg-group">
+                    @Html.LabelFor(m => m.ConfirmPassword, new { @class = "reg-lable" })
+                    @Html.PasswordFor(m => m.ConfirmPassword, htmlAttributes: new { @class = "form-control reg-control", @id = "formGroupExampleInput2" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger", @placeholder = "Password" })
+
+
+
+
+
+
+                </div>
+                <hr class="breaker" />
+                <p class="reg-hint">By clicking Join now, you agree to the LinkedIn User Agreement, Privacy Policy, and Cookie Policy.</p>
+                <button class="btn   login-btn  reg-btn col-lg-12  " type="submit">Join Now</button>
+
+            </div>
+        </div>
+
+    }
+
+
+    <footer class="navbar-fixed-bottom login-footer">
+        <div class="row col-xs-12 col-xs-push-2">
+            <span class="search-hint  col-xs-2 ">Find a Colleague   </span>
+            <form class="form-inline login-form col-xs-8 " id="search-form">
+                <input class="form-control search-form    col-xs-4 " type="text" placeholder="First Name" aria-label="First">
+                <input class="form-control   col-xs-4  " type="text" placeholder="Last Name" aria-label="Last">
+                <button class="btn   login-btn search-btn  col-xs-1 " type="submit">Search</button>
+            </form>
+        </div>
+        <div class="row col-xs-12 col-xs-pull-1">
+            <ol class="letters col-xs-hidden">
+                <span>LinkedIn member directory: &nbsp&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp&nbsp;</span>
+                <a class="a" href="">A</a>
+                <a class="a" href="">B</a>
+                <a class="a" href="">C</a>
+                <a class="a" href="">D</a>
+                <a class="a" href="">E</a>
+                <a class="a" href="">F</a>
+                <a class="a" href="">G</a>
+                <a class="a" href="">H</a>
+                <a class="a" href="">I</a>
+                <a class="a" href="">J</a>
+                <a class="a" href="">K</a>
+                <a class="a" href="">L</a>
+                <a class="a" href="">M</a>
+                <a class="a" href="">N</a>
+                <a class="a" href="">O</a>
+                <a class="a" href="">P</a>
+                <a class="a" href="">Q</a>
+                <a class="a" href="">R</a>
+                <a class="a" href="">S</a>
+                <a class="a" href="">T</a>
+                <a class="a" href="">U</a>
+                <a class="a" href="">V</a>
+                <a class="a" href="">W</a>
+                <a class="a" href="">X</a>
+                <a class="a" href="">Y</a>
+                <a class="a" href="">Z</a>
+            </ol>
+        </div>
+
+
+    </footer>
+
+
+
+    <script src="~/Style and structure/Login-Page/jquery-3.3.1.min.js"></script>
+
+    <script src="~/Style and structure/Login-Page/bootstrap.min.js"></script>
+
+    <script src="~/Style and structure/Login-Page/app.js"></script>
+
+</body>
+</html>

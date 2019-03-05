@@ -1,0 +1,20 @@
+﻿@model ITI.Mvc.LinkedIn.ViewModels.SearchViewModel
+
+
+@using (Ajax.BeginForm("Search", "Account",null, new AjaxOptions
+{
+
+    InsertionMode = InsertionMode.Replace, //target element(#patientList) will be replaced
+    UpdateTargetId = "replacing",
+    //LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
+}, new { @class = "navbar-form navbar-left ", id = "searchform", role = "form" }))
+{
+    <div class="form-group">
+        @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
+    </div>
+    @*<button class="btn btn-default search-btn form-group" type="submit">
+            <i class="fas fa-search"></i>
+        </button>*@
+    @*<input  type="submit" value="search" class="post-btn btn btn-primary col-xs-1 col-xs-offset-3 col-lg-offset-7" />*@
+    <a href="javascript:document.getElementById('searchform').submit()">search</a>
+}

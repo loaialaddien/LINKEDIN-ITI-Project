@@ -1,0 +1,38 @@
+﻿
+@using ITI.Mvc.LinkedIn.Models.Entities
+@model ITI.Mvc.LinkedIn.ViewModels.AppUserViewModel
+
+
+
+<div class="experience col-lg-push-2 col-lg-8 col-xs-11">
+
+	<div class="row experience-header">
+		<div class="title col-xs-3">Experience</div>
+	</div>
+
+	<div class="row experience-body">
+
+		@foreach (Company item in Model.Companies)
+		{
+			<div class="row experience-unit col-xs-8">
+
+				<div class="experience-unit-logo col-xs-1">
+					<i class="fas fa-place-of-worship"></i>
+				</div>
+
+
+				<div class="experience-unit-details col-xs-10">
+					<div class="experience-unit-title">@item.Title</div>
+					<span class="experience-unit-name">@item.Name </span>
+					<div class="experience-unit-start-end-year">@item.StartDate-@item.EndDate</div>
+				</div>
+
+
+			</div>
+
+		}
+	</div>
+
+
+
+</div>

@@ -1,0 +1,38 @@
+﻿@model ITI.Mvc.LinkedIn.ViewModels.LanguageViewModel
+<div id="languagediv">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.language)
+            </th>
+
+            <th>
+                @Ajax.ActionLink("Add", "AddLanguage", "ProfileManager", null, new AjaxOptions
+           {
+               HttpMethod = "GET",
+               InsertionMode = InsertionMode.Replace,
+               UpdateTargetId = "languagediv"
+           }, htmlAttributes: new { @class = "navbar-link navbar-link-text" })
+
+
+
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Mylanguages)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+
+
+                    @Html.ActionLink("Edit", "EditLanguage", "ProfileManager", new { id = item.Id }, null)|
+                    @Html.ActionLink("Delete", "DeleteLanguage", "ProfileManager", new { id = item.Id }, null)
+                </td>
+
+            </tr>}
+    </table>
+</div>
+

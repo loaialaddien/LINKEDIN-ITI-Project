@@ -1,0 +1,243 @@
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\obj\Debug\ITI.Mvc.LinkedIn.csprojResolveAssemblyReference.cache
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\obj\Debug\ITI.Mvc.LinkedIn.csproj.CoreCompileInputs.cache
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\ApplicationInsights.config
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\csc.exe
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\csc.exe.config
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\csc.rsp
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\csi.exe
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\csi.exe.config
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\csi.rsp
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.AppContext.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Collections.Immutable.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Console.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Diagnostics.Process.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.IO.Compression.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.IO.FileSystem.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.IO.Pipes.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Reflection.Metadata.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Security.AccessControl.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Security.Claims.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Security.Principal.Windows.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Threading.Thread.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.ValueTuple.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Xml.XmlDocument.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Xml.XPath.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\vbc.exe
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\vbc.exe.config
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\vbc.rsp
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\VBCSCompiler.exe
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\VBCSCompiler.exe.config
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\ITI.Mvc.LinkedIn.dll.config
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\ITI.Mvc.LinkedIn.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\ITI.Mvc.LinkedIn.pdb
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Antlr3.Runtime.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\EntityFramework.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\EntityFramework.SqlServer.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.Agent.Intercept.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.DependencyCollector.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.Web.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.WindowsServer.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.ApplicationInsights.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AspNet.Identity.Core.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Cookies.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Facebook.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Google.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.OAuth.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Twitter.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Web.Infrastructure.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Newtonsoft.Json.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Owin.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Helpers.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Mvc.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Optimization.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Razor.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.WebPages.Deployment.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.WebPages.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.WebPages.Razor.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\WebGrease.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Helpers.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Mvc.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Optimization.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Razor.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.WebPages.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.WebPages.Deployment.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.WebPages.Razor.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Antlr3.Runtime.pdb
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Newtonsoft.Json.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\EntityFramework.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\EntityFramework.SqlServer.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AspNet.Identity.Core.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Facebook.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Cookies.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.OAuth.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Google.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Twitter.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.ApplicationInsights.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.DependencyCollector.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.WindowsServer.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.Web.xml
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\obj\Debug\ITI.Mvc.LinkedIn.dll
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\obj\Debug\ITI.Mvc.LinkedIn.pdb
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\obj\Debug\ITI.Mvc.LinkedIn.Migrations.companiesmigration.resources
+D:\iti\mvcprojects\project4 with authentication\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\obj\Debug\ITI.Mvc.LinkedIn.csproj.GenerateResource.Cache
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\ApplicationInsights.config
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\csc.exe
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\csc.exe.config
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\csc.rsp
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\csi.exe
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\csi.exe.config
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\csi.rsp
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.AppContext.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Collections.Immutable.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Console.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Diagnostics.Process.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.IO.Compression.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.IO.FileSystem.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.IO.Pipes.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Reflection.Metadata.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Security.AccessControl.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Security.Claims.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Security.Principal.Windows.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Threading.Thread.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.ValueTuple.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Xml.XmlDocument.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Xml.XPath.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\vbc.exe
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\vbc.exe.config
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\vbc.rsp
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\VBCSCompiler.exe
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\roslyn\VBCSCompiler.exe.config
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\ITI.Mvc.LinkedIn.dll.config
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\ITI.Mvc.LinkedIn.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\ITI.Mvc.LinkedIn.pdb
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Antlr3.Runtime.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\EntityFramework.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\EntityFramework.SqlServer.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.Agent.Intercept.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.DependencyCollector.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.Web.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.WindowsServer.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.ApplicationInsights.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AspNet.Identity.Core.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Cookies.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Facebook.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Google.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.OAuth.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Twitter.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Web.Infrastructure.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Newtonsoft.Json.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Owin.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Helpers.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Mvc.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Optimization.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Razor.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.WebPages.Deployment.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.WebPages.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.WebPages.Razor.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\WebGrease.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Helpers.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Mvc.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Optimization.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.Razor.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.WebPages.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.WebPages.Deployment.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\System.Web.WebPages.Razor.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Antlr3.Runtime.pdb
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Newtonsoft.Json.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\EntityFramework.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\EntityFramework.SqlServer.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AspNet.Identity.Core.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Facebook.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Cookies.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.OAuth.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Google.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.Twitter.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.ApplicationInsights.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.DependencyCollector.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.WindowsServer.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\bin\Microsoft.AI.Web.xml
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\obj\Debug\ITI.Mvc.LinkedIn.csprojResolveAssemblyReference.cache
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\obj\Debug\ITI.Mvc.LinkedIn.Migrations.companiesmigration.resources
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\obj\Debug\ITI.Mvc.LinkedIn.csproj.GenerateResource.Cache
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\obj\Debug\ITI.Mvc.LinkedIn.csproj.CoreCompileInputs.cache
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\obj\Debug\ITI.Mvc.LinkedIn.dll
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\obj\Debug\ITI.Mvc.LinkedIn.pdb
+D:\iti\courses\mvc\backup\5-3\2\ITI.Mvc.LinkedIn\ITI.Mvc.LinkedIn\obj\Debug\ITI.Mvc.LinkedIn.Migrations.usereducation.resources

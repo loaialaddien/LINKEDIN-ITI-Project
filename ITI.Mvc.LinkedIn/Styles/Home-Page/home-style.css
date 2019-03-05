@@ -1,0 +1,130 @@
+body {
+    /* background-image: url("images/15505-4.jpg") ; */
+    margin: 0px;  
+    background:rgb(20, 17, 46);
+    padding-top: 70px;
+    position: relative;
+}
+.fa-linkedin {
+    width: 40px;
+    height: 40px;
+    color: #85092e;
+    padding-top: 0px;
+    padding-left: 2.5px;
+    border-radius: 2px;
+    padding-bottom: 20px;
+    font-weight: 100;
+    font-size: 40px;
+    margin-top: 5px;
+    background-color: #cfcfcf;
+
+}
+.my-navbar{
+    background: linear-gradient(to right, rgba(20, 17, 46), #85092e);
+    height: 50px;
+    border: none;
+    
+}
+.icon-bar{
+    text-decoration-color: #cfcfcf;
+}
+
+
+.navbar-link{
+    position: relative;
+    margin-top: -5px;
+}
+.navbar-link:hover{
+    background-color:rgba(20, 17, 46);
+    color: #85092e;
+    transform: scale(1.1 );
+    transition: 300ms;
+}
+.active{
+    
+}
+.navbar-active-link{
+    border-bottom: 2px #cfcfcf;
+}
+.fa-search{
+    font-size: 18px;
+    color: #cfcfcf;
+    margin: auto;
+    padding-bottom: 0px;
+}
+
+
+.navbar-link-icon{
+    color: #cfcfcf;
+    left: 5px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: -5px;
+    justify-content: center;
+    
+    
+}
+
+.navbar-link-text{
+    color: #cfcfcf;
+    font-size: 12px;
+    padding-right: 5px;
+    
+}
+.search-btn{
+    /* border: 2px solid rgba(20, 17, 46); */
+    background-color:#af214b69;
+    box-shadow: 2px 2px 2px rgb(46, 17, 31);
+}
+.search-btn:hover {
+    
+    background-color:rgba(20, 17, 46);
+    transform: scale(1.1 );
+    transition: 300ms;
+    
+}
+
+.me-image-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: #cfcfcf;
+}
+
+.message-menu{
+    max-height: 200px;
+    background-color: #cfcfcf;
+    padding: 0px;
+   
+}
+
+
+.message-menu-body{
+    width: 100%;
+    height: 300px;
+    background-color: #cfcfcf;
+    
+    z-index: 10000;
+}
+.message-btn{
+    border: none;
+    border-radius: 0px;
+    background-color: #85092e;
+    
+    width: 100%;
+    height: 40px;
+}
+.fa-edit{
+    margin-right: 10px;
+}
+.message-btn-icons{
+    color: #cfcfcf;
+    font-size: 15px;
+    padding-right: 5px;
+    
+}
+.message-btn-text{
+    color: #cfcfcf;
+
+}
+

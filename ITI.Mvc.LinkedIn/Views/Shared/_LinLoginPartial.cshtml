@@ -1,0 +1,36 @@
+﻿@model ITI.Mvc.LinkedIn.Models.LoginViewModel
+
+
+<nav class="navbar  navbar-light  navbar-fixed-top login-navbar">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
+
+    <div class="row col-xs-12">
+        <div class="login-brand col-xs-2 " id="login">Linked<i class="fab fa-linkedin"></i></div>
+        <div class="collapse navbar-collapse login-form " id="navbarSupportedContent">
+@using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "navbar-form navbar-left col-xs-5 col-xs-push-5 login-form", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control login-email", @placeholder = "Email"})
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+
+
+
+
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control login-password" })
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger", @placeholder = "Password" })
+                <button class="btn login-btn" type="submit">Sign in</button>
+}
+        </div>
+    </div>
+</nav>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

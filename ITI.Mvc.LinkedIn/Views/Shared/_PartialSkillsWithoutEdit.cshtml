@@ -1,0 +1,36 @@
+﻿@using ITI.Mvc.LinkedIn.Models.Entities
+@model ITI.Mvc.LinkedIn.ViewModels.AppUserViewModel
+
+<div class="experience col-lg-push-2 col-lg-8 col-xs-11">
+
+	<div class="row experience-header">
+		<div class="title col-xs-4">Skills &amp; Endorsements</div>
+	</div>
+
+	<div class="row experience-body">
+		@foreach (Skills item in Model.Skills)
+		{
+
+
+		<div class="row experience-unit col-xs-12">
+
+			<div class="skill-unit-details col-xs-12">
+				<div class="Skill-name ">@item.Name </div>
+			</div>
+
+			@*<div class="skill-unit-details col-xs-12">
+				<div class="Skill-name ">Front End Devoloping</div>
+			</div>
+
+			<div class="skill-unit-details col-xs-12">
+				<div class="Skill-name ">Revit Structure</div>
+			</div>*@
+		</div>
+
+		}
+
+
+	</div>
+
+
+</div>

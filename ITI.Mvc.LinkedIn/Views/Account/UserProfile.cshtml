@@ -1,0 +1,233 @@
+﻿@model ITI.Mvc.LinkedIn.ViewModels.AppUserViewModel
+@{
+	ViewBag.Title = "UserProfile";
+}
+
+<h2>UserProfile</h2>
+
+<div>
+	<h4>Posts</h4>
+	<hr />
+	<dl class="dl-horizontal">
+		<dt>
+			@Html.DisplayNameFor(model => model.User.Fname)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.User.Fname)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.User.Lname)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.User.Lname)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.User.Industry)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.User.Industry)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.User.Headline)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.User.Headline)
+		</dd>
+
+	</dl>
+
+</div>
+
+<div id="languagediv">
+	<table class="table">
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Languages)
+			</th>
+
+			<th>
+                @Ajax.ActionLink("Add", "AddLanguage", "ProfileManager", null, new AjaxOptions
+           {
+               HttpMethod = "GET",
+               InsertionMode = InsertionMode.Replace,
+               UpdateTargetId = "languagediv"
+           }, htmlAttributes: new { @class = "navbar-link navbar-link-text" })
+
+
+
+			</th>
+		</tr>
+
+		@foreach (var item in Model.Languages)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Name)
+				</td>
+				<td>
+
+
+					@Html.ActionLink("Edit", "EditLanguage", "ProfileManager", new { id = item.Id }, null)|
+					@Html.ActionLink("Delete", "DeleteLanguage", "ProfileManager", new { id = item.Id }, null)
+				</td>
+
+			</tr>
+		}
+	</table>
+</div>
+
+<div id="skilldiv">
+	<table class="table">
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Skills)
+			</th>
+
+			<th>
+				@Ajax.ActionLink("Add", "AddSkills", "ProfileManager",new AjaxOptions{
+			   HttpMethod="GET",
+			   InsertionMode=InsertionMode.Replace,
+			   UpdateTargetId="skilldiv"
+		   },htmlAttributes: new { @class = "btn btn-primary"})
+			
+
+
+
+			</th>
+		</tr>
+
+		@foreach (var item in Model.Skills)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Name)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Name)
+				</td>
+				<td>
+
+
+					@Html.ActionLink("Edit", "EditSkills", "ProfileManager", new { id = item.Id }, null)|
+					@Html.ActionLink("Delete", "DeleteSkills", "ProfileManager", new { id = item.Id }, null)
+				</td>
+
+			</tr>
+		}
+	</table>
+</div>
+<div>
+	<table class="table">
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Courses)
+			</th>
+
+			<th>
+				@Html.ActionLink("Add", "AddCourses", "ProfileManager")
+
+
+
+			</th>
+		</tr>
+
+		@foreach (var item in Model.Courses)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.CourseName)
+				</td>
+				<td>
+
+
+					@Html.ActionLink("Edit", "EditCourses", "ProfileManager", new { id = item.Id }, null)|
+					@Html.ActionLink("Delete", "DeleteCourses", "ProfileManager", new { id = item.Id }, null)
+				</td>
+
+			</tr>
+		}
+	</table>
+</div>
+
+<div>
+	<table class="table">
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Companies)
+			</th>
+
+			<th>
+				@Html.ActionLink("Add", "AddCompanies", "ProfileManager")
+
+
+
+			</th>
+		</tr>
+
+		@foreach (var item in Model.Companies)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Name)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Title)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.StartDate)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.EndDate)
+				</td>
+				<td>
+
+
+					@Html.ActionLink("Edit", "EditCompanies", "ProfileManager", new { id = item.Id }, null)|
+					@Html.ActionLink("Delete", "DeleteCompanies", "ProfileManager", new { id = item.Id }, null)
+				</td>
+
+			</tr>
+		}
+	</table>
+</div>
+
+<div>
+	<table class="table">
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.User.Posts)
+			</th>
+
+			<th>
+				@Html.ActionLink("Edit", "Edit", "ProfileManager", new { id = Model.User.Id }, null) |
+				@Html.ActionLink("Details", "Details", "ProfileManager", new { id = Model.User.Id }, null) |
+				@Html.ActionLink("Delete", "Delete", "ProfileManager", new { id = Model.User.Id }, null)|
+			</th>
+		</tr>
+
+		@foreach (var item in Model.Posts)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Id)
+				</td>
+
+			</tr>
+		}
+	</table>
+</div>
+
+
+<script src="~/Style and structure/Home-Page/home-app.js"></script>
+<script src="~/Style and structure/Home-Page/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="~/Scripts/modernizr-2.6.2.js"></script>
+<script src="~/Style and structure/Home-Page/bootstrap.min.js"></script>
+<script src="~/Style and structure/Login-Page/app.js"></script>

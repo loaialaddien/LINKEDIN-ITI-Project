@@ -1,0 +1,282 @@
+﻿
+@model ITI.Mvc.LinkedIn.PostViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+
+<!-- Posts Section -->
+<!-- Start Post Section -->
+<div id="start-post" class="start-post  col-lg-12">
+    <div class="write-post">
+        <div class="row ">
+
+            <a href="" data-toggle="modal" data-target="#post-form-modal">
+                <div class="start col-xs-6">
+                    <i class="fas fa-edit "></i>Start a Post
+                </div>
+            </a>
+
+            <div class="modal fade write-post-modal" id="post-form-modal" tabindex="-1" role="dialog"
+                 aria-labelledby="myLargeModalLabel">
+                @using (Ajax.BeginForm("Create", "posts", new AjaxOptions
+                {
+
+                    InsertionMode = InsertionMode.InsertBefore, //target element(#patientList) will be replaced
+                    UpdateTargetId = "Postcreatedbyuser",
+                    //LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
+                }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        <h4>Posts</h4>
+                        <hr />
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+                        <div class="modal-dialog " role="document">
+
+                            <div class="modal-content post-form-modal-content">
+                                <div class="modal-header post-form-modal-header">
+                                    <a class="close post-form-modal-cancel" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" class="x">&times;</span>
+                                    </a>
+                                </div>
+                                <div class="post-form-profile-img">
+                                    <img src="6.jpg" class="img-responsive" alt="Responsive image">
+                                </div>
+                                @Html.EditorFor(model => model.mytext.PostText, new { htmlAttributes = new { @class = "form-control post-write-area" } })
+                                <div class="hashtag">
+                                    <a href="" class="hashtag-link link">+ Add hashtag</a>
+                                    <span class="hashtag-hint">Help the right people see your post</span>
+                                </div>
+                                <hr>
+
+                                <div class="row post-add-media">
+                                    <div class="post-media col-xs-2">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+
+
+
+                                    <div class="post-media col-xs-2">
+                                        <i class="fas fa-video"></i>
+                                    </div>
+
+
+
+                                    <div class="post-media col-xs-2">
+                                        <i class="fas fa-file"></i>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input type="submit" value="Create" class="post-btn btn btn-primary col-xs-1 col-xs-offset-3 col-lg-offset-7" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                }
+
+
+
+
+
+            </div>
+
+
+            <a href="#">
+                <div class="post-content col-xs-2">
+                    <i class="fas fa-camera"></i>
+
+                </div>
+            </a>
+            <a href="#">
+                <div class="post-content col-xs-2">
+                    <i class="fas fa-video"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="post-content col-xs-2">
+                    <i class="fas fa-file"></i>
+                </div>
+            </a>
+
+
+        </div>
+    </div>
+
+
+    <div class="atricle col-xs-12">
+        <a href="#" class="artical-link"><i class="far fa-newspaper"></i>Write an Article</a>&nbsp; on Linkedin
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@*
+            @model ITI.Mvc.LinkedIn.PostViewModel
+
+        <!-- Posts Section -->
+        <div class="post-container col-lg-5  col-m-12 col-s-12 col-xs-12">
+
+            <!-- Start Post Section -->
+            <div class="start-post  col-lg-12">
+                <div class="write-post">
+                    <div class="row ">
+
+                        <a href="" data-toggle="modal" data-target="#post-form-modal">
+                            <div class="start col-xs-6">
+                                <i class="fas fa-edit "></i>Start a Post
+                            </div>
+                        </a>
+
+                        <div class="modal fade write-post-modal" id="post-form-modal" tabindex="-1" role="dialog"
+                             aria-labelledby="myLargeModalLabel">
+                                                @*
+                                        @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        <h4>Posts</h4>
+                        <hr />
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.mytext.PostText, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.mytext.PostText, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.mytext.PostText, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+
+    <form>
+        <div class="modal-dialog " role="document">
+
+            <div class="modal-content post-form-modal-content">
+                <div class="modal-header post-form-modal-header">
+                    <a class="close post-form-modal-cancel" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="x">&times;</span>
+                    </a>
+                </div>
+
+                <div class="post-form-profile-img">
+                    <img src="6.jpg" class="img-responsive" alt="Responsive image">
+                </div>
+
+                <textarea class="form-control post-write-area"
+                          placeholder="What do you want to talk abou?"></textarea>
+                <hr>
+
+                <div class="hashtag">
+                    <a href="" class="hashtag-link link">+ Add hashtag</a>
+                    <span class="hashtag-hint">Help the right people see your post</span>
+                </div>
+                <hr>
+
+                <div class="row post-add-media">
+                    <a href="#">
+                        <div class="post-media col-xs-2">
+                            <i class="fas fa-camera"></i>
+                            <input type="file" class="upload">
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="post-media col-xs-2">
+                            <i class="fas fa-video"></i>
+                            <input type="file" class="upload">
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="post-media col-xs-2">
+                            <i class="fas fa-file"></i>
+                            <input type="file" class="upload">
+                        </div>
+                    </a>
+                    <button type="submit" class=" post-btn btn btn-primary col-xs-1 col-xs-offset-3 col-lg-offset-7"
+                            aria-label="Post">
+                        Post
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+                    </div>
+
+
+    <a href="#">
+        <div class="post-content col-xs-2">
+            <i class="fas fa-camera"></i>
+
+        </div>
+    </a>
+    <a href="#">
+        <div class="post-content col-xs-2">
+            <i class="fas fa-video"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div class="post-content col-xs-2">
+            <i class="fas fa-file"></i>
+        </div>
+    </a>
+
+
+                </div>
+            </div>
+
+
+    <div class="atricle col-xs-12">
+        <a href="#" class="artical-link"><i class="far fa-newspaper"></i>Write an Article</a>&nbsp; on Linkedin
+    </div>
+
+
+
+        </div>
+        </div>
+
+
+
+
+
+
+
+*@

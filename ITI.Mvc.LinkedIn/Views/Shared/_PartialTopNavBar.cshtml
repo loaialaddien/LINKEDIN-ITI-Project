@@ -1,0 +1,179 @@
+﻿@using Microsoft.AspNet.Identity
+@using ITI.Mvc.LinkedIn.ViewModels
+@if (Request.IsAuthenticated)
+{
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-default navbar-fixed-top my-navbar">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse  " id="navbar-collapse-1">
+
+               @Html.Partial("_PartialSearchForm",new SearchViewModel())
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown navbar-list">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">
+                            &nbsp;&nbsp;<i class="fas fa-th navbar-link-icon"></i>
+                            <div class="navbar-link-text navbar-droplist-text">Work<span class="caret"></span></div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-separator navbar-left "></div>
+
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown navbar-list">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">
+                            <div class="me-image-icon">
+                                <img src="6.jpg" class="img-responsive" alt="Responsive image">
+                            </div>
+                            <div class="navbar-link-text">Me<span class="caret"></span></div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                @Ajax.ActionLink("User Profile", "UserProfile","Account",null,null,null, null, new AjaxOptions
+                           {
+                               LoadingElementId = "LoadingPage",
+                               OnBegin = "showLoadingPage",
+                               OnComplete = "hideLoadingPage",
+                               HttpMethod = "GET",
+                               InsertionMode = InsertionMode.Replace,
+                               UpdateTargetId = "replacing"
+                           }, htmlAttributes: new { @class = "navbar-link navbar-link-text" })
+                                @Ajax.ActionLink("profile","UserProfile","Account", new AjaxOptions
+                           {
+                               HttpMethod = "GET",
+                               InsertionMode = InsertionMode.Replace,
+                               UpdateTargetId = "replacing"
+                           })
+                            </li>
+                            <li>
+                                @Ajax.ActionLink("Manage Your Account", "Index", "Manage", null, new AjaxOptions
+                           {
+                               LoadingElementId = "LoadingPage",
+                               OnBegin = "showLoadingPage",
+                               OnComplete = "hideLoadingPage",
+                               HttpMethod = "GET",
+                               InsertionMode = InsertionMode.Replace,
+                               UpdateTargetId = "replacing"
+                           }, htmlAttributes: new { @class = "navbar-link navbar-link-text" })
+
+                        </li>
+                            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                            {
+                            @Html.AntiForgeryToken()
+
+
+
+                               <a class="navbar-link navbar-link-text" onclick="" href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+                           
+                            }
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li>  <a id="logofflink" onclick="Logoff()" title="Log off"
+   href="#">new Log off</a>  </li>
+                    </ul>
+                </li>
+            </ul>
+            @*<li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                <li>@Html.ActionLink("posts", "index", "posts")</li>
+                <li>@Html.ActionLink("UserProfile", "UserProfile", "Account")</li>
+                <li>@Html.ActionLink("Users", "ShowAllUsers", "Account")</li>
+
+                <li>@Html.ActionLink("Wall", "Wall", "posts")</li>*@
+
+
+            <ul class="nav navbar-nav navbar-right ">
+                <li class="navbar-list ">
+
+
+                    &nbsp;<i class="fas fa-home navbar-link-icon"></i>
+                    @Ajax.ActionLink("Home", "Wall", "posts", null, new AjaxOptions
+               {
+                   LoadingElementId = "LoadingPage",
+                   OnBegin = "showLoadingPage",
+                   OnComplete = "hideLoadingPage",
+                   HttpMethod = "GET",
+                   InsertionMode = InsertionMode.Replace,
+                   UpdateTargetId = "replacing"
+               }, htmlAttributes: new { @class = "navbar-link navbar-link-text"})
+                    @*  @Html.ActionLink("Home", "Wall", "posts",null,htmlAttributes: new { @class = "navbar-link navbar-link-text" })*@
+
+
+                </li>
+
+                <li class="navbar-list">
+                    <a href="#" class="navbar-link">
+                        &nbsp;<i class="fas fa-user-friends navbar-link-icon"></i>
+                        <div class="navbar-link-text">Network</div>
+                    </a>
+                </li>
+
+                <li class="navbar-list">
+                    <a href="#" class="navbar-link">
+                        &nbsp;<i class="fas fa-briefcase navbar-link-icon"></i>
+                        <div class="navbar-link-text">Jobs</div>
+                    </a>
+                </li>
+
+                <li class="navbar-list">
+                    <a href="#" class="navbar-link">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-comments navbar-link-icon"></i>
+                        <div class="navbar-link-text">Messaging</div>
+                    </a>
+                </li>
+
+                <li class="navbar-list">
+                    <a href="#" class="navbar-link">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-bell navbar-link-icon"></i>
+                        <div class="navbar-link-text">Notifications</div>
+                    </a>
+                </li>
+            </ul>
+
+
+
+
+        </div>
+    </div>
+</nav>
+}
+else
+{
+   
+    @Html.Partial("_partialLinRegisteration2", new ITI.Mvc.LinkedIn.Models.RegisterViewModel())
+}
+
+@*<script type="text/javascript">
+    $('#logofflink').click(function ()
+    {
+        $.getElementById('logoutForm').submit();
+    })
+</script>*@
+

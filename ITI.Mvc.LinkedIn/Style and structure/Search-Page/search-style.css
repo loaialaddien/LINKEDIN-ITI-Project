@@ -1,0 +1,227 @@
+body {
+    /* background-image: url("images/15505-4.jpg") ; */
+    margin: 0px;  
+    background:rgb(20, 17, 46);
+    padding-top: 50px;
+    position: relative;
+}
+
+.fa-linkedin {
+    width: 40px;
+    height: 40px;
+    color: #85092e;
+    padding-top: 0px;
+    padding-left: 2.5px;
+    border-radius: 2px;
+    padding-bottom: 20px;
+    font-weight: 100;
+    font-size: 40px;
+    margin-top: 5px;
+    background-color: #cfcfcf;
+
+}
+
+
+
+.my-navbar{
+    background: linear-gradient(to right, rgba(20, 17, 46), #85092e);
+    height: 50px;
+    border: none;
+    
+    
+}
+.icon-bar{
+    text-decoration-color: #cfcfcf;
+}
+
+
+.navbar-link{
+    margin-top: -5px;
+}
+.navbar-link:hover{
+    background-color: rgba(20, 17, 46);
+    transform: scale(1.05 );
+    transition: 200ms;
+}
+.active{
+    background-color: rgba(20, 17, 46);
+    
+}
+
+.fa-search{
+    font-size: 18px;
+    color: #cfcfcf;
+    margin: auto;
+    padding-bottom: 0px;
+}
+
+
+.navbar-link-icon{
+    color: #cfcfcf;
+    font-size: 20px;
+    margin-top: -12px;
+}
+
+.navbar-link-text{
+    color: #cfcfcf;
+    font-size: 12px;
+}
+.search-btn{
+    /* border: 2px solid rgba(20, 17, 46); */
+    background-color:#af214b69;
+    box-shadow: 2px 2px 2px rgb(46, 17, 31);
+}
+.search-btn:hover {
+    
+    background-color:rgba(20, 17, 46);
+    transform: scale(1.1 );
+    transition: 300ms;
+    
+}
+.navbar-list:active{
+    height: 50px;
+    background-color:rgba(20, 17, 46);
+    transform: scale(.9 );
+    transition: 200ms;
+}
+.navbar-list:hover{
+    height: 50px;
+    border-bottom: 2px solid #cfcfcf;
+}
+.me-image-icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -10px;
+    border: 1px solid #cfcfcf;
+}
+.navbar-droplist-text{
+    margin-top: -5px;
+}
+
+
+
+
+
+
+
+.main-search-section{
+    margin-top: 80px;
+    min-height: 300px;
+    background-color: #ebebeb;
+    margin-left: 15px;
+    overflow: hidden; 
+    padding-left: 30px;   
+    border-radius: 8px;
+}
+.search-unit-container{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d3d2d2;
+
+}
+.main-search-header{
+    height: 70px;
+    padding: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #8d8c8c;
+    border-bottom: 2px solid #c0bfbf;
+
+}
+.search-unit-img-container{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid #c0bfbf;
+    overflow: hidden;
+    box-shadow: 1px 1px 8px 1px rgb(46, 17, 31);
+
+}
+.search-unit-img{
+    height: 100%;
+    
+}
+.search-unit-details{
+    margin-left: 20px;
+}
+
+.search-unit-name-link{
+    color: #a70133;
+    font-size: 24px;
+}
+.search-unit-name-link:hover,.search-unit-img-container:hover{
+    transform: scale(1.05);
+    transition: 200ms;
+
+}
+.connect-btn{
+    color: #a70b3a;
+    background-color: #ebebeb;
+    border: 2px solid #a70b3a;
+    font-weight: 600;
+}
+.connect-btn:hover{
+    color: #a70b3a;
+    background-color: #ebebeb;
+    border: 2px solid #a70b3a;
+    font-weight: 700;
+    transition: 300ms;
+    box-shadow: 1px 1px 10px 1px #3a3a3a;
+}
+.connect-btn:active{
+    color: #a70b3a;
+    background-color: #ebebeb;
+    border: 2px solid #a70b3a;
+    font-weight: 700;
+    transition: 300ms;
+    outline: none;
+}
+.connect-btn:focus{
+    color: #a70b3a;
+    background-color: #ebebeb;
+    border: 2px solid #a70b3a;
+    font-weight: 600;
+    outline: none;
+}
+
+.profile-footer{
+    height: 200px;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.message-menu-body{
+    width: 100%;
+    /* height: 300px; */
+    background-color: #ffffff;
+    
+    z-index: 10000;
+    box-shadow: 1px 1px 5px 1px  #3a3a3a;
+
+}
+.message-btn{
+    border: none;
+    border-radius: 0px;
+    background-color: #85092e;
+    
+    width: 100%;
+    height: 40px;
+}
+.fa-edit{
+    margin-right: 10px;
+}
+.message-btn-icons{
+    color: #fffdfd;
+    font-size: 15px;
+    padding-right: 5px;
+    
+}
+.message-btn-text{
+    color: #cfcfcf;
+
+}
+

@@ -1,0 +1,50 @@
+﻿@model ITI.Mvc.LinkedIn.Models.Entities.UserEducation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>UserEducation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Faculty.FacultyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Faculty.FacultyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.University.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.University.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinkedInUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinkedInUserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Degree)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Degree)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
