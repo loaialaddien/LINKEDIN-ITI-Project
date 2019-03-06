@@ -3,62 +3,54 @@
 
 
 <!-- (1)Add Courses Modal -->
-<div class="modal fade add-education-modal add-skill-modal" id="add-course-modal" tabindex="-1" role="dialog"
-     aria-labelledby="myLargeModalLabel">
-   
-        <div class="modal-dialog " role="document">
-
-            <div class="modal-content add-experience-modal-content">
-                <div class="modal-header add-experience-modal-header">
-                    <span class="add-experience-modal-titl">Add Course</span>
-                    <a class="close " data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" class="x">&times;</span>
-                    </a>
-                </div>
+@using (Ajax.BeginForm("AddCourses", "ProfileManager", null, new AjaxOptions
+{
 
 
 
-                @using (Ajax.BeginForm("AddCourses", "ProfileManager",null, new AjaxOptions
-                {
-                    HttpMethod ="POST",
+    HttpMethod = "POST",
+    OnSuccess = "$('#add-course-modal').modal('hide');",
+    InsertionMode = InsertionMode.ReplaceWith, //target element(#) will be replaced
+    UpdateTargetId = "courses-container",
+    //LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
+}, new { @class = "add-experience-modal-form add-skill-modal-form", id = "addcoursesform" }))
+{
+    <div class="modal fade add-education-modal add-skill-modal" id="add-course-modal" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel">
 
-                    InsertionMode = InsertionMode.ReplaceWith, //target element(#) will be replaced
-                    UpdateTargetId = "courses-container",
-                    //LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
-                }, new { @class = "add-experience-modal-form add-skill-modal-form" , id="addcoursesform"}))
-                {
-                    @Html.AntiForgeryToken()
-                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="modal-dialog " role="document">
 
-                    
-
-                        <label class="edit-profile-modal-form-lable">Course Name&nbsp;&nbsp;<span class="requied">*</label>
-                        @Html.TextBoxFor(e => e.course.CourseName, new { htmlAttributes = new { @class = "form-control edit-profile-modal-form-lable-control", @placeholder = "Ex: AutoCAD", @id = "add-course-name-text-field" } })
-                        @*<input type="text" class="form-control edit-profile-modal-form-lable-control" id="add-course-name-text-field" placeholder="Ex: AutoCAD">*@
-
-
-                        <div class="edit-profile-modal-save" id="add-course-btn">
-                            
-                        <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('addcoursesform').submit()">Create</a>
-                        </div>
-
-
-                }
-
-
+        <div class="modal-content add-experience-modal-content">
+            <div class="modal-header add-experience-modal-header">
+                <span class="add-experience-modal-titl">Add Course</span>
+                <a class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="x">&times;</span>
+                </a>
             </div>
+
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+            <label class="edit-profile-modal-form-lable">Course Name&nbsp;&nbsp;<span class="requied">*</label>
+            @Html.TextBoxFor(e => e.course.CourseName, new { htmlAttributes = new { @class = "form-control edit-profile-modal-form-lable-control", @placeholder = "Ex: AutoCAD", @id = "add-course-name-text-field" } })
+
+            @*<input type="text" class="form-control edit-profile-modal-form-lable-control" id="add-course-name-text-field" placeholder="Ex: AutoCAD">*@
+
+            <div class="edit-profile-modal-save" id="add-course-btn">
+                <input type="submit" value="add" />
+                @* <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('addcoursesform').submit()">Create</a>*@
+            </div>
+
+
+
         </div>
-    
+    </div>
 
 
-</div>
 
-<script src="~/Style and structure/Home-Page/home-app.js"></script>
-<script src="~/Style and structure/Home-Page/jquery-3.3.1.min.js"></script>
-<script src="~/Scripts/modernizr-2.6.2.js"></script>
-<script src="~/Style and structure/Home-Page/bootstrap.min.js"></script>
-<script src="~/Style and structure/Login-Page/app.js"></script>
-<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
+    </div>
+
 }
+

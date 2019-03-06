@@ -30,13 +30,21 @@
 
                 <form class="add-experience-modal-form add-skill-modal-form">
 
-                    <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
-                           placeholder="Ex: Data Science">
+                    @*<input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
+                           placeholder="Ex: Data Science">*@
+                    @Html.TextBoxFor(m => m.skill.Name, new { @class = "form-control" })
+
+                    @Html.TextBoxFor(m => m.skill.Description, new { @class = "form-control" })
+
+
+
+
 
 
                     <div class="edit-profile-modal-save">
-                        <button type="submit" class="btn edit-profile-modal-save-btn">Add</button>
-                        <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('addskillform').submit()">Create</a>
+                       @* <button type="submit" class="btn edit-profile-modal-save-btn">Add</button>*@
+                     @*   <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('addskillform').submit()">Create</a>*@
+                        <input type="submit" value="add" />
 
                     </div>
                 </form>
@@ -48,4 +56,3 @@
 </div>
 
 
-@Scripts.Render("~/bundles/jquery")

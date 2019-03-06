@@ -1,0 +1,106 @@
+﻿@using ITI.Mvc.LinkedIn.Models.Entities
+
+@using ITI.Mvc.LinkedIn.ViewModels
+@model AppUserViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ProfilePageEdit</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link href="~/Style and structure/Login-Page/bootstrap.css" rel="stylesheet" />
+
+    <link href="~/Style and structure/Home-Page/home-style.css" rel="stylesheet" />
+
+    <link href="~/Style and structure/Login-Page/style.css" rel="stylesheet" />
+    <link href="~/Style and structure/Profile(2)-Page/profile-style.css" rel="stylesheet" />
+    <link href="~/Style and structure/Search-Page/search-style.css" rel="stylesheet" />
+    <link href="~/Style and structure/Loading-Page/loading-style.css" rel="stylesheet" />
+
+</head>
+<body>
+    moamen is awesome
+    @Html.Partial("_PartialTopNavBar")
+
+
+    <div id="LoadingPage" class='face' hidden>
+        <div class='container'>
+            <div class="main-icon">
+                <i class="fab fa-linkedin"></i>
+            </div>
+
+            <span class='loading'></span>
+            <div class="caption">
+                <h2>Opportunities</h2>
+                <ul>
+                    <li>O</li>
+                    <li>N</li>
+                    <li>T</li>
+                    <li>H</li>
+                    <li>E</li>
+                    <li>W</li>
+                    <li>A</li>
+                    <li>Y</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="replacing">
+
+        @Html.Partial("_PartialProfileheaderwithedit")
+        @Html.Partial("_PartialProfileEducationwithedit")
+        @Html.Partial("_PartialProfileExperiencewithedit")
+        @Html.Partial("_PartialProfileSkillswithedit")
+        @Html.Partial("_PartialProfilelanguageswithedit")
+        @Html.Partial("_PartialProfilecourseswithedit")
+
+
+    </div>
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+   
+        @*@Scripts.Render("~/bundles/jquery")*@
+   
+
+
+
+  
+    <script type="text/javascript">
+        function showLoadingPage() {
+    $('#LoadingPage').show();
+        @*$('#LoadingPage').append(
+                '<img src="@Url.Content("~/Images/AjaxLoaderImg.gif")" alt="Loading..."class="ajax-loader" />')*@
+     ;
+ }
+
+        function hideLoadingPage() {
+     setTimeout(function () {
+         //$('.ajax-loader').remove();
+         $('#LoadingPage').hide();
+     },2000);
+        }
+        function Logoff() {
+            $('#logofflink').click(function () {
+                $('#logoutForm').submit();
+            })
+        }
+    </script>
+
+
+    @*<script src="~/Style and structure/Profile(2)-Page/profile-app.js"></script>*@
+</body>
+</html>

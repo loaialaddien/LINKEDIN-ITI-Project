@@ -524,12 +524,15 @@ namespace ITI.Mvc.LinkedIn.Controllers
             {
                 //بزار التعديل
 
-                return PartialView("_PartialProfilePagewithEdit", appUserView);
+                //return PartialView("_PartialProfilePagewithEdit", appUserView);
+                return View("ProfilePageEdit", appUserView);
 
             }
             else
             {
-                return View(appUserView);
+                return View("ProfilePageEdit", appUserView);
+
+                //return View(appUserView);
             }
         }
 

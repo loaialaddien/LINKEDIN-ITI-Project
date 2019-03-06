@@ -387,6 +387,7 @@ namespace ITI.Mvc.LinkedIn.Controllers
                 Courses = mydatabase.CoursesUserManager.GetAllBind().Where(i => i.LinkedInUserId == userid).ToList()
             };
             if (Request.IsAjaxRequest())
+
             {
 
              return PartialView("_PartialProfilecourseswithedit", myviewmodel);
