@@ -1,0 +1,116 @@
+﻿@using ITI.Mvc.LinkedIn.Models.Entities
+@model ITI.Mvc.LinkedIn.ViewModels.UserEducationViewModel
+
+<!-- (1)Add Education Modal -->
+<div class="modal fade add-education-modal" id="add-education-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel">
+
+    <div class="modal-dialog " role="document">
+
+        <div class="modal-content add-education-modal-content">
+            <div class="modal-header add-education-modal-header">
+                <span class="add-education-modal-titl">Add Education</span>
+                <a class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="x">&times;</span>
+                </a>
+            </div>
+            @using (Ajax.BeginForm("AddUserEducation", "ProfileManager", new AjaxOptions
+            {
+                HttpMethod = "Post",
+                InsertionMode = InsertionMode.InsertAfter, //target element(#patientList) will be replaced
+                UpdateTargetId = "useredureplace",
+                //LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
+            }, new { @class = "add-experience-modal-form add-skill-modal-form", id = "addeducationform" }
+               ))
+            {
+                <label class="edit-profile-modal-form-lable">School&nbsp;&nbsp;<span class="requied">*</span></label>
+                    <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
+                           placeholder="Ex: Boston University">
+
+                    <label class="edit-profile-modal-form-lable">Degree</label>
+                    <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
+                           placeholder="Ex: Bachelor's">
+
+                    <label class="edit-profile-modal-form-lable">Field of Study</label>
+                    <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
+                           placeholder="Ex: Engineering">
+
+                    <label class="edit-profile-modal-form-lable">Grade</label>
+                    <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
+                           placeholder="Current Position">
+
+                    <label class="edit-profile-modal-form-lable">Activities and societies</label>
+                    <textarea class="form-control edit-profile-modal-form-textarea" rows="3"></textarea>
+
+                    <label class="edit-profile-modal-form-lable">From Year</label>
+                    <div class="dropdown ">
+                        <button class="btn btn-default dropdown-toggle edit-profile-modal-form-dropdownlist" type="button"
+                                id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Year
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu edit-profile-modal-form-dropdownlist" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">2019</a></li>
+                            <li><a href="#">2018</a></li>
+                            <li><a href="#">2017</a></li>
+                            <li><a href="#">2016</a></li>
+                            <li><a href="#">2015</a></li>
+                            <li><a href="#">2014</a></li>
+                            <li><a href="#">2013</a></li>
+                            <li><a href="#">2012</a></li>
+                            <li><a href="#">2011</a></li>
+                            <li><a href="#">2010</a></li>
+                        </ul>
+                    </div>
+
+
+                    <label class="edit-profile-modal-form-lable">To Year(Expected) </label>
+                    <div class="dropdown ">
+                        <button class="btn btn-default dropdown-toggle edit-profile-modal-form-dropdownlist" type="button"
+                                id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Year
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu edit-profile-modal-form-dropdownlist" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">2023</a></li>
+                            <li><a href="#">2022</a></li>
+                            <li><a href="#">2021</a></li>
+                            <li><a href="#">2020</a></li>
+                            <li><a href="#">2019</a></li>
+                            <li><a href="#">2018</a></li>
+                            <li><a href="#">2017</a></li>
+                            <li><a href="#">2016</a></li>
+                            <li><a href="#">2015</a></li>
+                            <li><a href="#">2014</a></li>
+                            <li><a href="#">2013</a></li>
+                            <li><a href="#">2012</a></li>
+                            <li><a href="#">2011</a></li>
+                            <li><a href="#">2010</a></li>
+                        </ul>
+                    </div>
+
+
+                    <label class="edit-profile-modal-form-lable">Description</label>
+                    <textarea class="form-control edit-profile-modal-form-textarea" rows="3"></textarea>
+
+                    <div class="edit-profile-modal-save">
+                      @*  <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('addeducationform').submit()">Create</a>*@
+                        <input type="submit" value="add" />
+
+                    </div>
+            }
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+</div>
+
+

@@ -122,6 +122,13 @@ namespace ITI.Mvc.LinkedIn.Controllers
             {
                 LinkedInUserId = User.Identity.GetUserId(),
                 Degree = viewmodel.Myeducation.Degree,
+                 Activities = viewmodel.Myeducation.Activities,
+                  Descriptions = viewmodel.Myeducation.Descriptions,
+                   EndDate = viewmodel.Myeducation.EndDate,
+                    Fieldofstudy = viewmodel.Myeducation.Fieldofstudy,
+                     Grade = viewmodel.Myeducation.Grade,
+                      StartingDate = viewmodel.Myeducation.StartingDate,
+                       University = viewmodel.Myeducation.University
                     };
 
 
@@ -133,12 +140,22 @@ namespace ITI.Mvc.LinkedIn.Controllers
                 mydatabase.UserEducationManager.Add(usereducation);
 
 
-
-
-                return RedirectToAction("UserProfile", "Account");
             }
+            string userid = User.Identity.GetUserId();
 
-            return View(viewmodel);
+            AppUserViewModel myviewmodel = new AppUserViewModel()
+            {
+                EducationList = mydatabase.UserEducationManager.GetAllBind().Where(i => i.LinkedInUserId == userid).ToList()
+            };
+            if (Request.IsAjaxRequest())
+            {
+
+                return PartialView("_PartialProfileEducationwithedit", myviewmodel);
+            }
+            return PartialView("_PartialProfileEducationwithedit", myviewmodel);
+
+            
+
         }
 
         // GET: languages/Edit/5
@@ -370,6 +387,7 @@ namespace ITI.Mvc.LinkedIn.Controllers
                 Courses = mydatabase.CoursesUserManager.GetAllBind().Where(i => i.LinkedInUserId == userid).ToList()
             };
             if (Request.IsAjaxRequest())
+
             {
 
              return PartialView("_PartialProfilecourseswithedit", myviewmodel);

@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 ﻿@using ITI.Mvc.LinkedIn.ViewModels
+=======
+﻿@using ITI.Mvc.LinkedIn.Models.Entities
+@model ITI.Mvc.LinkedIn.ViewModels.AppUserViewModel
+<!-- Languages  section -->
+<!------------------------------->
+<div id="languagediv" class="languages col-lg-push-2 col-lg-8 col-xs-11">
+    <div class="row experience-header">
+        <div class="title col-xs-4">Languages</div>
+>>>>>>> 239ff5f79f832e335287379f614e9eb649403fa4
 
 @using ITI.Mvc.LinkedIn.Models.Entities
 @model  ITI.Mvc.LinkedIn.ViewModels.AppUserViewModel
@@ -9,6 +19,7 @@
             <div class="title col-xs-4">Languages</div>
 
 
+<<<<<<< HEAD
             <a href="" data-toggle="modal" data-target="#add-language-modal">
                 <div class="add-experience col-xs-1 col-xs-push-7">
                     <i class="fas fa-plus-circle"></i>
@@ -34,6 +45,53 @@
                         <div class="add-experience col-xs-1 ">
                             <i class="fas fa-pen"></i>
                         </div>
+=======
+    </div>
+
+
+    <div class=" experience-body">
+        @foreach (Language item in Model.Languages)
+        {
+            <div class="row experience-unit skill-unit-details col-xs-12">
+                <div class="Skill-name col-xs-10">@item.Name</div>
+                <a href="">
+                    <div class="skill-remove-icon  col-xs-1">
+                        <i class="far fa-trash-alt"></i>
+                    </div>
+                </a>
+                <a href="" data-toggle="modal" data-target="#edit-language-modal">
+                    <div class="add-experience col-xs-1 ">
+                        <i class="fas fa-pen"></i>
+                    </div>
+                </a>
+
+            </div>
+        }
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+@Html.Partial("_PartialAddLanguage",new ITI.Mvc.LinkedIn.ViewModels.LanguageViewModel())
+
+<!-- (2)Edit Languages Modal -->
+@*<div class="modal fade add-education-modal add-skill-modal" id="edit-language-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel">
+    <form>
+        <div class="modal-dialog " role="document">
+
+            <div class="modal-content add-experience-modal-content">
+                <div class="modal-header add-experience-modal-header">
+                    <span class="add-experience-modal-titl">Add Skill</span>
+                    <a class="close " data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="x">&times;</span>
+>>>>>>> 239ff5f79f832e335287379f614e9eb649403fa4
                     </a>
 
                 </div>
@@ -57,5 +115,9 @@
     <!-- (1)Add Languages Modal -->
     @Html.Partial("_PartialAddLanguage", new LanguageViewModel())
 
+<<<<<<< HEAD
     <!-- (2)Edit Courses Modal -->
     @Html.Partial("_PartialEditLanguage", new LanguageViewModel())
+=======
+</div>*@
+>>>>>>> 239ff5f79f832e335287379f614e9eb649403fa4

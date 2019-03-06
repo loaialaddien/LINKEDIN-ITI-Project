@@ -2,12 +2,30 @@
 
 
 
+<<<<<<< HEAD
 
 
 
     <div class="modal fade add-education-modal add-skill-modal" id="add-language-modal" tabindex="-1" role="dialog"
          aria-labelledby="myLargeModalLabel">
         <form>
+=======
+@using (Ajax.BeginForm( "AddLanguage", "ProfileManager", new AjaxOptions
+{
+      HttpMethod = "Post",
+    InsertionMode = InsertionMode.ReplaceWith, //target element(#patientList) will be replaced
+    UpdateTargetId = "languagediv"
+    //LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
+}, new { @class = "add-experience-modal-form add-skill-modal-form" , id="addlanguage"}))
+{
+   @Html.AntiForgeryToken()
+
+
+
+    <!-- (1)Add Languages Modal -->
+    <div class="modal fade add-education-modal add-skill-modal" id="add-language-modal" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel">
+>>>>>>> 239ff5f79f832e335287379f614e9eb649403fa4
             <div class="modal-dialog " role="document">
 
                 <div class="modal-content add-experience-modal-content">
@@ -18,6 +36,7 @@
                         </a>
                     </div>
 
+<<<<<<< HEAD
                     @using (Ajax.BeginForm("AddLanguage", "ProfileManager", new AjaxOptions
                     {
                         HttpMethod = "Post",
@@ -56,19 +75,53 @@
                 </div>
             </div>
         </form>
+=======
+
+
+                        <label class="edit-profile-modal-form-lable">Language</label>
+                        <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput" placeholder="Ex: Arabic">
+
+
+                        <label class="edit-profile-modal-form-lable">Proficiency</label>
+                        <div class="dropdown ">
+
+                            <button class="btn btn-default dropdown-toggle edit-profile-modal-form-dropdownlist" type="button"
+                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Nativ or Bilingual Proficiency
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu edit-profile-modal-form-dropdownlist" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Elementry Proficiency</a></li>
+                                <li><a href="#">Limited Working Proficiency</a></li>
+                                <li><a href="#">Profitional Working Proficiency</a></li>
+                                <li><a href="#">Full Profitional Proficiency</a></li>
+                                <li><a href="#">Nativ or Bilingual Proficiency</a></li>
+                            </ul>
+                        </div>
+
+
+
+
+
+                        <div class="edit-profile-modal-save">
+                           @* <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('addlanguage').submit()">Create</a>*@
+                            <input type="submit" value="add" />
+
+                        </div>
+
+                </div>
+            </div>
+
+
+    </div>
+>>>>>>> 239ff5f79f832e335287379f614e9eb649403fa4
 
 
     </div>
 
 
-<script src="~/Style and structure/Home-Page/home-app.js"></script>
-<script src="~/Style and structure/Home-Page/jquery-3.3.1.min.js"></script>
-<script src="~/Scripts/modernizr-2.6.2.js"></script>
-<script src="~/Style and structure/Home-Page/bootstrap.min.js"></script>
-<script src="~/Style and structure/Login-Page/app.js"></script>
-<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
 }
+
+
 
 

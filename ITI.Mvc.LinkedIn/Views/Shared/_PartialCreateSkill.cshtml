@@ -18,6 +18,7 @@
                 {
                     HttpMethod = "POST",
 
+<<<<<<< HEAD
                     InsertionMode = InsertionMode.ReplaceWith, //target element(#) will be replaced
                     UpdateTargetId = "courses-container",
                      //LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
@@ -25,19 +26,46 @@
                 {
                     @Html.AntiForgeryToken()
                     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+=======
+    InsertionMode = InsertionMode.ReplaceWith, //target element(#) will be replaced
+    UpdateTargetId = "Skills-container",
+    //LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
+}, new { @class = "add-experience-modal-form add-skill-modal-form", id = "addskillform" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+>>>>>>> 239ff5f79f832e335287379f614e9eb649403fa4
 
 
 
                 <form class="add-experience-modal-form add-skill-modal-form">
+<<<<<<< HEAD
                     @Html.EditorFor(e => e.skill.Name, new { htmlAttributes = new { @class = "form-control edit-profile-modal-form-lable-control", @placeholder = "Ex: AutoCAD", @id = "add-skill-name-text-field" } })
                     @Html.ValidationMessageFor(model => model.skill.Name, "", new { @class = "text-danger" })
                     @*<input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput" placeholder="Ex: Data Science">*@
+=======
+
+                    @*<input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput"
+                           placeholder="Ex: Data Science">*@
+                    @Html.TextBoxFor(m => m.skill.Name, new { @class = "form-control" })
+
+                    @Html.TextBoxFor(m => m.skill.Description, new { @class = "form-control" })
+
+
+
+>>>>>>> 239ff5f79f832e335287379f614e9eb649403fa4
 
 
 
                     <div class="edit-profile-modal-save">
+<<<<<<< HEAD
                         @*<button type="submit" class="btn edit-profile-modal-save-btn">Add</button>*@
                         <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('addskillform').submit()">Add</a>
+=======
+                       @* <button type="submit" class="btn edit-profile-modal-save-btn">Add</button>*@
+                     @*   <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('addskillform').submit()">Create</a>*@
+                        <input type="submit" value="add" />
+>>>>>>> 239ff5f79f832e335287379f614e9eb649403fa4
 
                     </div>
                 </form>
