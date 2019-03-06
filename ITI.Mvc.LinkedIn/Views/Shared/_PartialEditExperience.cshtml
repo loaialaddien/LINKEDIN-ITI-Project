@@ -1,60 +1,51 @@
 ﻿@model ITI.Mvc.LinkedIn.ViewModels.CompanyViewModel
 
-<!-- (1)Add Experience Modal -->
-<div class="modal fade add-education-modal" id="add-experience-modal" tabindex="-1" role="dialog"
-     aria-labelledby="myLargeModalLabel">
+
+<!-- (2)Edit Experience Modal -->
+<div class="modal fade edit-education-modal" id="edit-experience-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+
+    <form>
         <div class="modal-dialog " role="document">
 
-            <div class="modal-content add-experience-modal-content">
-                <div class="modal-header add-experience-modal-header">
-                    <span class="add-experience-modal-titl">Add Experience</span>
+            <div class="modal-content edit-experience-modal-content">
+                <div class="modal-header edit-experience-modal-header">
+                    <span class="edit-experience-modal-titl">Edit Experience</span>
                     <a class="close " data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" class="x">&times;</span>
                     </a>
                 </div>
 
 
-                @using (Ajax.BeginForm("AddCompanies", "ProfileManager", null, new AjaxOptions
-                {
-                    HttpMethod = "POST",
+                <form class="edit-experience-modal-form" id="editexperience">
 
-                    InsertionMode = InsertionMode.ReplaceWith, //target element(#) will be replaced
-                    UpdateTargetId = "CompaniesList",
-                    //LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
-                }, new { @class = "add-experience-modal-form", id = "addexperience" }))
-                {
                     @Html.AntiForgeryToken()
                     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
 
-
                     <label class="edit-profile-modal-form-lable">Title &nbsp;&nbsp;<span class="requied">*</span></label>
-                    @*<input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput" placeholder="Ex: Manager">*@
                     @Html.EditorFor(e => e.company.Title, new { htmlAttributes = new { @class = "form-control edit-profile-modal-form-lable-control ", @placeholder = "Ex: Manager", @id = "add-experience-title-text-field" } })
                     @Html.ValidationMessageFor(model => model.company.Title, "", new { @class = "text-danger" })
 
 
 
                     <label class="edit-profile-modal-form-lable">Company &nbsp;&nbsp;<span class="requied">*</label>
-                    @*<input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput" placeholder="Ex: Microsoft">*@
                     @Html.EditorFor(e => e.company.Name, new { htmlAttributes = new { @class = "form-control edit-profile-modal-form-lable-control ", @placeholder = "Ex: Microsoft", @id = "add-experience-company-name-text-field" } })
                     @Html.ValidationMessageFor(model => model.company.Name, "", new { @class = "text-danger" })
 
                     <label class="edit-profile-modal-form-lable">Location</label>
-                    @*<input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput" placeholder="Ex: London, United Kingdom">*@
                     @Html.EditorFor(e => e.company.Address, new { htmlAttributes = new { @class = "form-control edit-profile-modal-form-lable-control ", @placeholder = "Ex: London, United Kingdom", @id = "add-experience-company-locarion-text-field" } })
                     @Html.ValidationMessageFor(model => model.company.Name, "", new { @class = "text-danger" })
 
                     <label class="edit-profile-modal-form-lable">Start Date</label>
                     @Html.EditorFor(e => e.company.StartDate, new { htmlAttributes = new { @class = "form-control edit-profile-modal-form-lable-control ", @placeholder = "Ex: 12-2015", @id = "add-experience-company-startend-text-field" } })
                     @Html.ValidationMessageFor(model => model.company.StartDate, "", new { @class = "text-danger" })
-                    
+
 
 
                     <label class="edit-profile-modal-form-lable">End Date</label>
                     @Html.EditorFor(e => e.company.EndDate, new { htmlAttributes = new { @class = "form-control edit-profile-modal-form-lable-control ", @placeholder = "Ex: 07-2018", @id = "add-experience-company-enddate-text-field" } })
                     @Html.ValidationMessageFor(model => model.company.EndDate, "", new { @class = "text-danger" })
-                    
+
 
 
                     <label class="edit-profile-modal-form-lable">Industry &nbsp;&nbsp;<span class="requied">*</label>
@@ -63,25 +54,23 @@
 
 
 
-
-
-
-
                     <div class="edit-profile-modal-save">
-                        <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('addexperience').submit()">Add</a>
+                        <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('editexperience').submit()">Add</a>
                     </div>
+                    
+
+                </form>
 
 
 
-                }
+
 
 
 
 
             </div>
         </div>
+    </form>
 
 
 </div>
-
-

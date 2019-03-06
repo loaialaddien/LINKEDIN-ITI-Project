@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+using ITI.Mvc.LinkedIn.Models.Entities
 namespace ITI.Mvc.LinkedIn.ViewModels
 {
     public class AppUserViewModel

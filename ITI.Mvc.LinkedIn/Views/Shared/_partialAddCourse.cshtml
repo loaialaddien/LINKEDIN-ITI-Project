@@ -5,7 +5,7 @@
 <!-- (1)Add Courses Modal -->
 <div class="modal fade add-education-modal add-skill-modal" id="add-course-modal" tabindex="-1" role="dialog"
      aria-labelledby="myLargeModalLabel">
-   
+    <form>
         <div class="modal-dialog " role="document">
 
             <div class="modal-content add-experience-modal-content">
@@ -18,39 +18,40 @@
 
 
 
-                @using (Ajax.BeginForm("AddCourses", "ProfileManager",null, new AjaxOptions
+                @using (Ajax.BeginForm("AddCourses", "ProfileManager", new AjaxOptions
                 {
-                    HttpMethod ="POST",
+                    HttpMethod = "POST",
 
-                    InsertionMode = InsertionMode.ReplaceWith, //target element(#) will be replaced
+                    InsertionMode = InsertionMode.ReplaceWith, //target element(#patientList) will be replaced
                     UpdateTargetId = "courses-container",
                     //LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
-                }, new { @class = "add-experience-modal-form add-skill-modal-form" , id="addcoursesform"}))
+                }))
                 {
-                    @Html.AntiForgeryToken()
                     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-                    
+                    <form class="add-experience-modal-form add-skill-modal-form" id="addcourseform">
 
                         <label class="edit-profile-modal-form-lable">Course Name&nbsp;&nbsp;<span class="requied">*</label>
-                        @Html.TextBoxFor(e => e.course.CourseName, new { htmlAttributes = new { @class = "form-control edit-profile-modal-form-lable-control", @placeholder = "Ex: AutoCAD", @id = "add-course-name-text-field" } })
+                        @Html.EditorFor(e => e.course.CourseName, new { htmlAttributes = new { @class = "form-control edit-profile-modal-form-lable-control", @placeholder = "Ex: AutoCAD", @id = "add-course-name-text-field" } })
+                        @Html.ValidationMessageFor(model => model.course.CourseName, "", new { @class = "text-danger" })
                         @*<input type="text" class="form-control edit-profile-modal-form-lable-control" id="add-course-name-text-field" placeholder="Ex: AutoCAD">*@
 
 
-                        <div class="edit-profile-modal-save" id="add-course-btn">
-                            
-                        <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('addcoursesform').submit()">Create</a>
+                        <div class="form-group">
+                            <div class="edit-profile-modal-save col-md-push-2 col-md-10" id="add-course-btn">
+                                <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('addcourseform').submit()">Save</a>
+                            </div>
                         </div>
 
+                    </form>
 
                 }
 
 
             </div>
         </div>
-    
+    </form>
 
 
 </div>
-<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
-<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+

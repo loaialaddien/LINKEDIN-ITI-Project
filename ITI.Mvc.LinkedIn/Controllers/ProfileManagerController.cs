@@ -414,21 +414,34 @@ namespace ITI.Mvc.LinkedIn.Controllers
         }
 
         // GET: courses/Delete/5
+        
+        
         public ActionResult DeleteCourses(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            CourseViewModel myview = new CourseViewModel();
-            myview.course = mydatabase.CoursesUserManager.GetById(id);
-            if (myview.course == null)
+            string userid = User.Identity.GetUserId();
+            Courses course = mydatabase.CoursesUserManager.GetById(id);
+
+            mydatabase.CoursesUserManager.Remove(course);
+            AppUserViewModel myviewmodel = new AppUserViewModel()
+            {
+                Courses = mydatabase.CoursesUserManager.GetAllBind().Where(i => i.LinkedInUserId == userid).ToList() 
+            };
+
+            if (myviewmodel.Courses == null)
             {
                 return HttpNotFound();
             }
+            
+            
+            if (Request.IsAjaxRequest())
+            {
 
-            mydatabase.CoursesUserManager.Remove(myview.course);
-
+                return PartialView("_PartialProfileExperiencewithedit", myviewmodel);
+            }
             return RedirectToAction("UserProfile", "Account");
 
         }

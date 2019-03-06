@@ -272,6 +272,8 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -430,6 +432,12 @@
     <Content Include="Views\Shared\_PartialProfilePagewithEdit.cshtml" />
     <Content Include="Views\Shared\_PartialProfileSkillswithedit.cshtml" />
     <Content Include="Views\Shared\_PartialCreateExperience.cshtml" />
+    <Content Include="Views\Shared\_PartialCreateSkill.cshtml" />
+    <Content Include="Views\Shared\_PartialEditCourse.cshtml" />
+    <Content Include="Views\Shared\_PartialEditLanguage.cshtml" />
+    <Content Include="Views\Shared\_PartialEditSkill.cshtml" />
+    <Content Include="Views\Shared\_PartialEditExperience.cshtml" />
+    <Content Include="Views\Shared\_PartialEditProfileHeader.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

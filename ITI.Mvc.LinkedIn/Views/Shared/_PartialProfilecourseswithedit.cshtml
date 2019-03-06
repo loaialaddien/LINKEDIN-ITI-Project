@@ -7,7 +7,7 @@
 <div id="courses-container" class="courses col-lg-push-2 col-lg-8 col-xs-11">
     <div class="row experience-header">
 
-        
+
         <div class="title col-xs-4">Courses</div>
 
         <a href="" data-toggle="modal" data-target="#add-course-modal">
@@ -20,8 +20,8 @@
     </div>
 
 
-    <div class=" experience-body" >
-       
+    <div class=" experience-body">
+
 
         @foreach (var item in Model.Courses)
 
@@ -29,11 +29,21 @@
             <div class="row experience-unit skill-unit-details col-xs-12">
                 <div class="Skill-name col-xs-10">@item.CourseName</div>
 
-                <a href="">
-                    <div class="skill-remove-icon  col-xs-1">
-                        <i class="far fa-trash-alt"></i>
-                    </div>
-                </a>
+                @*<a href="" id="@item.Id">
+                      <div class="skill-remove-icon  col-xs-1">
+                          <i class="far fa-trash-alt"></i>
+                      </div>
+                    </a>*@
+
+
+                @Ajax.ActionLink(" ","DeleteCourses", "ProfileManager", new { id = item.Id }, new AjaxOptions
+                {
+                    HttpMethod = "GET",
+                    InsertionMode = InsertionMode.ReplaceWith,
+                    UpdateTargetId = "_PartialProfilecourseswithedit"
+                }, new { @class = "far fa-trash-alt skill-remove-icon  col-xs-1" })
+
+
 
                 <a href="" data-toggle="modal" data-target="#edit-course-modal">
                     <div class="add-experience col-xs-1 ">
@@ -50,66 +60,15 @@
     </div>
 </div>
 
+<!-- (1)Add Courses Modal -->
 
 @Html.Partial("_PartialAddCourse", new CourseViewModel())
 
-
-
-
 <!-- (2)Edit Courses Modal -->
-<div class="modal fade add-education-modal add-skill-modal" id="edit-course-modal" tabindex="-1" role="dialog"
-     aria-labelledby="myLargeModalLabel">
-    <form>
-        <div class="modal-dialog " role="document">
-
-            <div class="modal-content add-experience-modal-content">
-                <div class="modal-header add-experience-modal-header">
-                    <span class="add-experience-modal-titl">Add Course</span>
-                    <a class="close " data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" class="x">&times;</span>
-                    </a>
-                </div>
-
-
-                <form class="add-experience-modal-form add-skill-modal-form">
-
-                    <label class="edit-profile-modal-form-lable">Course Name&nbsp;&nbsp;<span class="requied">*</label>
-                    <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput" placeholder="Ex: AutoCAD">
-
-                    <label class="edit-profile-modal-form-lable">Number</label>
-                    <input type="text" class="form-control edit-profile-modal-form-lable-control" id="formGroupExampleInput" placeholder="">
-
-
-
-                    <label class="edit-profile-modal-form-lable">Associated with</label>
-                    <div class="dropdown ">
-
-                        <button class="btn btn-default dropdown-toggle edit-profile-modal-form-dropdownlist" type="button"
-                                id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Student at Assiut University, Bachelor's degree Civil Engineering
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu edit-profile-modal-form-dropdownlist" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">Student at Assiut University, Bachelor's degree Civil Engineering</a></li>
-                            <li><a href="#">Structural Design Engineer at Eamar</a></li>
-                            <li><a href="#">Student at ITI</a></li>
-                        </ul>
-                    </div>
+@Html.Partial("_PartialEditCourse", new CourseViewModel())
 
 
 
 
-
-                    <div class="edit-profile-modal-save">
-                        <button type="submit" class="btn edit-profile-modal-save-btn">Save</button>
-                    </div>
-                </form>
-
-            </div>
-        </div>
-    </form>
-
-
-</div>
 <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
 <script src="~/Scripts/jquery-3.3.1.min.js"></script>

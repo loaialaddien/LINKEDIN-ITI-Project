@@ -117,7 +117,7 @@ body {
     overflow: hidden;    
 
 }
-.profile-img-container{
+.profile-img-container-header{
     height: 200px;
     width: 200px;
     margin-left: 150px;
@@ -127,7 +127,7 @@ body {
     box-shadow: 1px 1px 10px 1px  #3a3a3a;
     border: 2px solid #afaeae;
 }
-.profile-img-container:hover{
+.profile-img-container-header:hover{
     transform: scale(1.05);
     transition: 300ms;
 }
@@ -224,10 +224,10 @@ body {
     width: 100%
 }
 .edit-profile-modal-form,.add-education-modal-form,.add-experience-modal-form,.edit-experience-modal-form{
-    margin-left: 400px;
+    margin-left:100px;
 }
 .edit-profile-modal-form-lable-control,.edit-profile-modal-form-lable{
-    margin-left: 100px;
+    
     width: 600px;
 }
 .edit-profile-modal-form-lable-control{

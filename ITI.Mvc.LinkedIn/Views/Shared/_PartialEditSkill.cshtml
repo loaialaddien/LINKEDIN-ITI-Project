@@ -1,0 +1,45 @@
+﻿@model ITI.Mvc.LinkedIn.ViewModels.SkillViewModel
+
+
+<div class="modal fade  edit-skill-modal" id="edit-skill-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel">
+    <form>
+        <div class="modal-dialog " role="document">
+
+            <div class="modal-content add-experience-modal-content add-skill-modal-content">
+                <div class="modal-header add-experience-modal-header">
+                    <span class="add-experience-modal-titl">Edit Skills</span>
+                    <a class="close " data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="x">&times;</span>
+                    </a>
+                </div>
+
+
+                <form class="add-experience-modal-form " id="editskillform">
+
+                    @foreach (var item in Model.Myskills)
+                    {
+                        <div class="skill-unit">
+                            <div class="skill-name col-xs-11">@item.Name</div>
+
+                            <a href="">
+                                <div class="skill-remove-icon  ">
+                                    <i class="far fa-trash-alt"></i>
+                                </div>
+                            </a>
+
+                        </div>
+                    }
+
+
+                    <div class="edit-profile-modal-save">
+                        <a class="btn edit-profile-modal-save-btn" href="javascript:document.getElementById('editskillform').submit()">Add</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </form>
+
+
+</div>
